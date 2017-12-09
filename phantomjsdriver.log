@@ -1,0 +1,90 @@
+[INFO  - 2017-09-20T14:01:13.413Z] GhostDriver - Main - running on port 23790
+[INFO  - 2017-09-20T14:01:13.828Z] Session [29ec07e0-9e0c-11e7-8300-ff25a7c84319] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2017-09-20T14:01:13.829Z] Session [29ec07e0-9e0c-11e7-8300-ff25a7c84319] - page.customHeaders:  - {}
+[INFO  - 2017-09-20T14:01:13.829Z] Session [29ec07e0-9e0c-11e7-8300-ff25a7c84319] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"2.1.1","driverName":"ghostdriver","driverVersion":"1.2.0","platform":"windows-7-32bit","javascriptEnabled":true,"takesScreenshot":true,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"}}
+[INFO  - 2017-09-20T14:01:13.829Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: 29ec07e0-9e0c-11e7-8300-ff25a7c84319
+[ERROR - 2017-09-20T14:01:26.573Z] WebElementLocator - _handleLocateCommand - Element(s) NOT Found: GAVE UP. Search Stop Time: 1505916086526
+[ERROR - 2017-09-20T14:01:28.794Z] Session [29ec07e0-9e0c-11e7-8300-ff25a7c84319] - page.onError - msg: TypeError: undefined is not a constructor (evaluating 'r.apply(this,arguments)')
+[ERROR - 2017-09-20T14:01:28.794Z] Session [29ec07e0-9e0c-11e7-8300-ff25a7c84319] - page.onError - stack:
+  (anonymous function) (http://hotline.ua/js/prod/bin/660062cc15e3d2087f06968b72039b30.js:2279)
+  (anonymous function) (http://hotline.ua/js/prod/bin/660062cc15e3d2087f06968b72039b30.js:2276)
+  _ (http://hotline.ua/js/prod/bin/660062cc15e3d2087f06968b72039b30.js:2279)
+  m (http://hotline.ua/js/prod/bin/660062cc15e3d2087f06968b72039b30.js:2279)
+  f (http://hotline.ua/js/prod/bin/660062cc15e3d2087f06968b72039b30.js:2279)
+  trigger (http://hotline.ua/js/prod/bin/660062cc15e3d2087f06968b72039b30.js:2279)
+  onLoad (http://hotline.ua/js/prod/bin/660062cc15e3d2087f06968b72039b30.js:2421)
+  (anonymous function) (http://hotline.ua/js/prod/bin/660062cc15e3d2087f06968b72039b30.js:2318)
+  j (http://hotline.ua/js/prod/bin/3bc2e2ea67615f2eb5b2aa4f242792f5.js:2)
+  fireWith (http://hotline.ua/js/prod/bin/3bc2e2ea67615f2eb5b2aa4f242792f5.js:2)
+  x (http://hotline.ua/js/prod/bin/3bc2e2ea67615f2eb5b2aa4f242792f5.js:5)
+  b (http://hotline.ua/js/prod/bin/3bc2e2ea67615f2eb5b2aa4f242792f5.js:5)
+[ERROR - 2017-09-20T14:01:47.309Z] WebElementLocator - _handleLocateCommand - Element(s) NOT Found: GAVE UP. Search Stop Time: 1505916107246
+[ERROR - 2017-09-20T14:01:54.625Z] WebElementLocator - _handleLocateCommand - Element(s) NOT Found: GAVE UP. Search Stop Time: 1505916114571
+[ERROR - 2017-09-20T14:02:01.662Z] WebElementLocator - _handleLocateCommand - Element(s) NOT Found: GAVE UP. Search Stop Time: 1505916121650
+[INFO  - 2017-09-20T14:02:04.229Z] Session [29ec07e0-9e0c-11e7-8300-ff25a7c84319] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2017-09-20T14:02:04.229Z] Session [29ec07e0-9e0c-11e7-8300-ff25a7c84319] - page.customHeaders:  - {}
+[INFO  - 2017-09-20T14:02:09.547Z] ShutdownReqHand - _handle - About to shutdown
+[INFO  - 2017-09-22T06:59:46.808Z] GhostDriver - Main - running on port 44526
+[INFO  - 2017-09-22T06:59:47.161Z] Session [9eb88140-9f63-11e7-92a4-e7de241b37c4] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2017-09-22T06:59:47.162Z] Session [9eb88140-9f63-11e7-92a4-e7de241b37c4] - page.customHeaders:  - {}
+[INFO  - 2017-09-22T06:59:47.162Z] Session [9eb88140-9f63-11e7-92a4-e7de241b37c4] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"2.1.1","driverName":"ghostdriver","driverVersion":"1.2.0","platform":"windows-7-32bit","javascriptEnabled":true,"takesScreenshot":true,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"}}
+[INFO  - 2017-09-22T06:59:47.162Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: 9eb88140-9f63-11e7-92a4-e7de241b37c4
+[ERROR - 2017-09-22T07:00:00.757Z] WebElementLocator - _handleLocateCommand - Element(s) NOT Found: GAVE UP. Search Stop Time: 1506063600724
+[ERROR - 2017-09-22T07:00:02.894Z] Session [9eb88140-9f63-11e7-92a4-e7de241b37c4] - page.onError - msg: TypeError: undefined is not a constructor (evaluating 'r.apply(this,arguments)')
+[ERROR - 2017-09-22T07:00:02.894Z] Session [9eb88140-9f63-11e7-92a4-e7de241b37c4] - page.onError - stack:
+  (anonymous function) (http://hotline.ua/js/prod/bin/660062cc15e3d2087f06968b72039b30.js:2279)
+  (anonymous function) (http://hotline.ua/js/prod/bin/660062cc15e3d2087f06968b72039b30.js:2276)
+  _ (http://hotline.ua/js/prod/bin/660062cc15e3d2087f06968b72039b30.js:2279)
+  m (http://hotline.ua/js/prod/bin/660062cc15e3d2087f06968b72039b30.js:2279)
+  f (http://hotline.ua/js/prod/bin/660062cc15e3d2087f06968b72039b30.js:2279)
+  trigger (http://hotline.ua/js/prod/bin/660062cc15e3d2087f06968b72039b30.js:2279)
+  onLoad (http://hotline.ua/js/prod/bin/660062cc15e3d2087f06968b72039b30.js:2421)
+  (anonymous function) (http://hotline.ua/js/prod/bin/660062cc15e3d2087f06968b72039b30.js:2318)
+  j (http://hotline.ua/js/prod/bin/3bc2e2ea67615f2eb5b2aa4f242792f5.js:2)
+  fireWith (http://hotline.ua/js/prod/bin/3bc2e2ea67615f2eb5b2aa4f242792f5.js:2)
+  x (http://hotline.ua/js/prod/bin/3bc2e2ea67615f2eb5b2aa4f242792f5.js:5)
+  b (http://hotline.ua/js/prod/bin/3bc2e2ea67615f2eb5b2aa4f242792f5.js:5)
+[ERROR - 2017-09-22T07:00:17.056Z] WebElementLocator - _handleLocateCommand - Element(s) NOT Found: GAVE UP. Search Stop Time: 1506063617018
+[ERROR - 2017-09-22T07:00:25.384Z] WebElementLocator - _handleLocateCommand - Element(s) NOT Found: GAVE UP. Search Stop Time: 1506063625330
+[ERROR - 2017-09-22T07:00:32.839Z] WebElementLocator - _handleLocateCommand - Element(s) NOT Found: GAVE UP. Search Stop Time: 1506063632829
+[ERROR - 2017-09-22T07:00:40.068Z] WebElementLocator - _handleLocateCommand - Element(s) NOT Found: GAVE UP. Search Stop Time: 1506063640033
+[INFO  - 2017-09-22T07:00:42.751Z] Session [9eb88140-9f63-11e7-92a4-e7de241b37c4] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2017-09-22T07:00:42.751Z] Session [9eb88140-9f63-11e7-92a4-e7de241b37c4] - page.customHeaders:  - {}
+[INFO  - 2017-09-22T07:00:45.751Z] ShutdownReqHand - _handle - About to shutdown
+[INFO  - 2017-09-22T07:13:52.668Z] GhostDriver - Main - running on port 40252
+[INFO  - 2017-09-22T07:13:52.907Z] Session [96d2f350-9f65-11e7-95fa-17159c311ce6] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2017-09-22T07:13:52.908Z] Session [96d2f350-9f65-11e7-95fa-17159c311ce6] - page.customHeaders:  - {}
+[INFO  - 2017-09-22T07:13:52.908Z] Session [96d2f350-9f65-11e7-95fa-17159c311ce6] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"2.1.1","driverName":"ghostdriver","driverVersion":"1.2.0","platform":"windows-7-32bit","javascriptEnabled":true,"takesScreenshot":true,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"}}
+[INFO  - 2017-09-22T07:13:52.908Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: 96d2f350-9f65-11e7-95fa-17159c311ce6
+[ERROR - 2017-09-22T07:13:55.490Z] Session [96d2f350-9f65-11e7-95fa-17159c311ce6] - page.onError - msg: ReferenceError: Can't find variable: ar_content_width
+[ERROR - 2017-09-22T07:13:55.490Z] Session [96d2f350-9f65-11e7-95fa-17159c311ce6] - page.onError - stack:
+  ch_width (http://masterh7.adriver.ru/images/0005068/0005068447/0/script.js?vadriver_banner_4:99)
+  (anonymous function) (http://masterh7.adriver.ru/images/0005068/0005068447/0/script.js?vadriver_banner_4:108)
+  execute (http://hotline.ua/js/prod/bin/a75c4be8ac1ba1351b4b9c09455d40e5.js:98)
+  domReady (http://content.adriver.ru/plugins/autoUpdate.adriver.js:93)
+  (anonymous function) (http://content.adriver.ru/plugins/autoUpdate.adriver.js:70)
+  execute (http://hotline.ua/js/prod/bin/a75c4be8ac1ba1351b4b9c09455d40e5.js:98)
+  domReady (http://hotline.ua/js/prod/bin/a75c4be8ac1ba1351b4b9c09455d40e5.js:148)
+  onload (http://hotline.ua/js/prod/bin/a75c4be8ac1ba1351b4b9c09455d40e5.js:159)
+[ERROR - 2017-09-22T07:14:06.407Z] WebElementLocator - _handleLocateCommand - Element(s) NOT Found: GAVE UP. Search Stop Time: 1506064446402
+[ERROR - 2017-09-22T07:14:08.771Z] Session [96d2f350-9f65-11e7-95fa-17159c311ce6] - page.onError - msg: TypeError: undefined is not a constructor (evaluating 'r.apply(this,arguments)')
+[ERROR - 2017-09-22T07:14:08.771Z] Session [96d2f350-9f65-11e7-95fa-17159c311ce6] - page.onError - stack:
+  (anonymous function) (http://hotline.ua/js/prod/bin/660062cc15e3d2087f06968b72039b30.js:2279)
+  (anonymous function) (http://hotline.ua/js/prod/bin/660062cc15e3d2087f06968b72039b30.js:2276)
+  _ (http://hotline.ua/js/prod/bin/660062cc15e3d2087f06968b72039b30.js:2279)
+  m (http://hotline.ua/js/prod/bin/660062cc15e3d2087f06968b72039b30.js:2279)
+  f (http://hotline.ua/js/prod/bin/660062cc15e3d2087f06968b72039b30.js:2279)
+  trigger (http://hotline.ua/js/prod/bin/660062cc15e3d2087f06968b72039b30.js:2279)
+  onLoad (http://hotline.ua/js/prod/bin/660062cc15e3d2087f06968b72039b30.js:2421)
+  (anonymous function) (http://hotline.ua/js/prod/bin/660062cc15e3d2087f06968b72039b30.js:2318)
+  j (http://hotline.ua/js/prod/bin/3bc2e2ea67615f2eb5b2aa4f242792f5.js:2)
+  fireWith (http://hotline.ua/js/prod/bin/3bc2e2ea67615f2eb5b2aa4f242792f5.js:2)
+  x (http://hotline.ua/js/prod/bin/3bc2e2ea67615f2eb5b2aa4f242792f5.js:5)
+  b (http://hotline.ua/js/prod/bin/3bc2e2ea67615f2eb5b2aa4f242792f5.js:5)
+[ERROR - 2017-09-22T07:14:25.324Z] WebElementLocator - _handleLocateCommand - Element(s) NOT Found: GAVE UP. Search Stop Time: 1506064465264
+[ERROR - 2017-09-22T07:14:33.563Z] WebElementLocator - _handleLocateCommand - Element(s) NOT Found: GAVE UP. Search Stop Time: 1506064473519
+[ERROR - 2017-09-22T07:14:41.476Z] WebElementLocator - _handleLocateCommand - Element(s) NOT Found: GAVE UP. Search Stop Time: 1506064481428
+[ERROR - 2017-09-22T07:14:48.751Z] WebElementLocator - _handleLocateCommand - Element(s) NOT Found: GAVE UP. Search Stop Time: 1506064488715
+[INFO  - 2017-09-22T07:14:51.503Z] Session [96d2f350-9f65-11e7-95fa-17159c311ce6] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2017-09-22T07:14:51.503Z] Session [96d2f350-9f65-11e7-95fa-17159c311ce6] - page.customHeaders:  - {}
+[INFO  - 2017-09-22T07:14:54.867Z] ShutdownReqHand - _handle - About to shutdown

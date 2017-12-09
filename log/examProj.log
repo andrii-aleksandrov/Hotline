@@ -1,0 +1,1004 @@
+2017-24-09 13:43:18   WARN [org.apache.http.client.protocol.ResponseProcessCookies] : Invalid cookie header: "set-cookie: personalization_id="v1_wOYJ7EZ1kIZrCGA3CzqycQ=="; Expires=Tue, 24 Sep 2019 10:43:10 UTC; Path=/; Domain=.twitter.com". Invalid 'expires' attribute: Tue, 24 Sep 2019 10:43:10 UTC
+2017-24-09 13:43:18   WARN [org.apache.http.client.protocol.ResponseProcessCookies] : Invalid cookie header: "set-cookie: guest_id=v1%3A150624979051032660; Expires=Tue, 24 Sep 2019 10:43:10 UTC; Path=/; Domain=.twitter.com". Invalid 'expires' attribute: Tue, 24 Sep 2019 10:43:10 UTC
+2017-24-09 13:43:18   INFO [apiTests.TwitterAPI] : 
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head prefix="og: http://ogp.me/ns#">
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>GET statuses/home_timeline &mdash; Twitter Developers</title>
+  
+
+  
+  
+    <link rel="shortcut icon" href="https://ton.twimg.com/dtc/181b426f-2a88-4718-90bb-cb8296b91c60/_static/favicon.ico"/>
+  
+
+  <meta name="google-site-verification" content="DsylEvTL7j64tY0IHBWbMN6pUvvKMIRl8usLs1sn2XQ" />
+
+  
+  <meta name="twitter:card" content="" />
+  <meta name="twitter:title" content="" />
+  <meta name="twitter:description" content="" />
+  <meta name="twitter:image" content="" />
+  <meta name="twitter:url" content="" />
+  <meta name="twitter:widgets:csp" content="on" />
+
+  <meta property="og:title" content="" />
+  <meta property="og:site_name" content="" />
+  <meta property="og:type" content="" />
+  <meta property="og:image" content="" />
+  <meta property="og:url" content="" />
+
+  <link rel="canonical" href="" />
+  
+
+  
+  
+  
+    <link rel="stylesheet" href="https://ton.twimg.com/dtc/181b426f-2a88-4718-90bb-cb8296b91c60/_static/css/theme.css" type="text/css" />
+  
+
+  
+    <link rel="stylesheet" href="https://fonts.twitter.com/helvetica_neue/css/light.css" type="text/css" />
+    <link rel="stylesheet" href="https://fonts.twitter.com/helvetica_neue/css/roman.css" type="text/css" />
+    <link rel="stylesheet" href="https://fonts.twitter.com/helvetica_neue/css/bold.css" type="text/css" />
+    <link rel="stylesheet" href="https://fonts.twitter.com/helvetica_neue/css/heavy.css" type="text/css" />
+  
+
+  
+  
+    
+  
+    <link rel="top" title="Twitter Developers" href="../../../../index"/>
+        <link rel="up" title="Reference Documentation" href="../../../reference"/>
+        <link rel="next" title="GET statuses/lookup" href="lookup"/>
+        <link rel="prev" title="GET search/tweets" href="../search/tweets"/> 
+
+  
+  <link rel="dns-prefetch" href="https://platform.twitter.com">
+
+  
+  <script src="https://ton.twimg.com/dtc/181b426f-2a88-4718-90bb-cb8296b91c60/_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body role="document">
+
+  <div class="comp-wrapper nav-drawer-dtc no-interaction nav-exposed transparent">
+    <div class="comp-container container">
+      <div class="nav-wrapper">
+        <header>
+          <div class="header-left">
+            <div class="nav-drawer-link">
+              <div class="property-title">
+                <a href="../../../../index" class="logo-and-title">
+                  <span class="logo">
+                     <i class="icon-logo_sml" aria-hidden="true"></i>
+                    <span class="screen-reader">Twitter logo icon</span>
+                  </span>
+                  <span class="title">Developers</span>
+                </a>
+              </div>
+              <!-- <div class="arrow-down">
+                <i class="icon-navigation_down_arrow" aria-hidden="true"></i>
+                <span class="screen-reader">Arrow down icon</span>
+              </div> -->
+            </div>
+          </div>
+
+          <ul class="nav-exposed__menu">
+              <li class="nav-main__list-item">
+                <a href="/products" title="Products">Products</a>
+              </li>
+              <li class="nav-main__list-item">
+                <a href="../../../../docs" title="Documentation">Documentation</a>
+              </li>
+              <li class="nav-main__list-item">
+                <a href="/community" title="Community">Community</a>
+              </li>
+              <li class="nav-main__list-item">
+                <a href="/build" title="Build">Build</a>
+              </li>
+              <li class="nav-main__list-item">
+                <a href="https://apps.twitter.com" title="My Apps" target="_blank">My apps</a>
+              </li>
+              <li class="nav-main__list-item nav-cta">
+                <a href="../../../../resources/signup" title="Join"><button>Join</button></a>
+              </li>
+          </ul>
+
+          <div class="header-right">
+            <a class="nav-icon" href="#"><span></span></a>
+            <a class="nav-cta" href="../../../../resources/signup" title="Join"><button>Join</button></a>
+          </div>
+        </header>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Masthead -->
+  <div class="comp-wrapper masthead slim blue-gradient">
+    <div class="comp-container container">
+      <div class="copy-wrapper">
+        <div class="copy-container">
+          <h2>Twitter Developer Documentation</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- / Masthead -->
+
+  
+
+
+
+
+
+<div class="container">
+  <div role="navigation" aria-label="breadcrumbs navigation">
+    <ol class="breadcrumb">
+      <li><a href="../../../../docs">Docs</a></li>
+        
+          <li><a href="../../../public">REST APIs</a></li>
+        
+          <li><a href="../../../reference">Reference Documentation</a></li>
+        
+      
+      <li>GET statuses/home_timeline</li>
+      
+    </ol>
+  </div>
+</div>
+  <div class="bg-outer">
+    <div class="container">
+      
+      <div class="row row-offcanvas row-offcanvas-left">
+
+        <div id="sidebar-nav" class="col-xs-6 col-sm-3 sidebar-offcanvas">
+              
+<!--<div role="search">
+  <p class="caption"><span class="caption-text">Search</span></p>
+  <form id="rtd-search-form" action="../../../../search" method="get">
+    <label class="search_cont">
+      <input type="text" name="q" placeholder="Search for..." />
+      <i class="icon-navigation_search"></i>
+    </label>
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>-->
+              
+                
+                
+                    <p class="caption"><span class="caption-text">Products &amp; Services</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../../../basics">Best practices</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../overview/api">API overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../web/overview">Twitter for Websites</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../twitterkit/overview">Twitter Kit</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../cards/overview">Cards</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../oauth">OAuth</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../../public">REST APIs</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../../../public/rate-limiting">API Rate Limits</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../public/rate-limits">Rate Limits: Chart</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../public/search">The Search API</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../public/search-by-place">The Search API: Tweets by Place</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../public/timelines">Working with Timelines</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../direct-messages">Direct Messages Beta Features</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../collections">Collections</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../media">Media</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../public/search">Search</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../ton">TON</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../../../reference">Reference Documentation</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="../account/settings">GET account/settings</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../account/verify_credentials">GET account/verify_credentials</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../application/rate_limit_status">GET application/rate_limit_status</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../blocks/ids">GET blocks/ids</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../blocks/list">GET blocks/list</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../collections/entries">GET collections/entries</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../collections/list">GET collections/list</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../collections/show">GET collections/show</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../direct_messages">GET direct_messages</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../direct_messages/events/list">GET direct_messages/events/list</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../direct_messages/events/show">GET direct_messages/events/show</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../direct_messages/sent">GET direct_messages/sent</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../direct_messages/show">GET direct_messages/show</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../direct_messages/welcome_messages/list">GET direct_messages/welcome_messages/list</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../direct_messages/welcome_messages/rules/list">GET direct_messages/welcome_messages/rules/list</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../direct_messages/welcome_messages/rules/show">GET direct_messages/welcome_messages/rules/show</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../direct_messages/welcome_messages/show">GET direct_messages/welcome_messages/show</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../favorites/list">GET favorites/list</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../followers/ids">GET followers/ids</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../followers/list">GET followers/list</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../friends/ids">GET friends/ids</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../friends/list">GET friends/list</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../friendships/incoming">GET friendships/incoming</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../friendships/lookup">GET friendships/lookup</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../friendships/no_retweets/ids">GET friendships/no_retweets/ids</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../friendships/outgoing">GET friendships/outgoing</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../friendships/show">GET friendships/show</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../geo/id/place_id">GET geo/id/:place_id</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../geo/reverse_geocode">GET geo/reverse_geocode</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../geo/search">GET geo/search</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../help/configuration">GET help/configuration</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../help/languages">GET help/languages</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../help/privacy">GET help/privacy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../help/tos">GET help/tos</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../lists/list">GET lists/list</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../lists/members">GET lists/members</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../lists/members/show">GET lists/members/show</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../lists/memberships">GET lists/memberships</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../lists/ownerships">GET lists/ownerships</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../lists/show">GET lists/show</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../lists/statuses">GET lists/statuses</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../lists/subscribers">GET lists/subscribers</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../lists/subscribers/show">GET lists/subscribers/show</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../lists/subscriptions">GET lists/subscriptions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../media/upload-status">GET media/upload (STATUS)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../mutes/users/ids">GET mutes/users/ids</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../mutes/users/list">GET mutes/users/list</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../saved_searches/list">GET saved_searches/list</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../saved_searches/show/id">GET saved_searches/show/:id</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../search/tweets">GET search/tweets</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="">GET statuses/home_timeline</a><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="lookup">GET statuses/lookup</a></li>
+<li class="toctree-l3"><a class="reference internal" href="mentions_timeline">GET statuses/mentions_timeline</a></li>
+<li class="toctree-l3"><a class="reference internal" href="oembed">GET statuses/oembed</a></li>
+<li class="toctree-l3"><a class="reference internal" href="retweeters/ids">GET statuses/retweeters/ids</a></li>
+<li class="toctree-l3"><a class="reference internal" href="retweets/id">GET statuses/retweets/:id</a></li>
+<li class="toctree-l3"><a class="reference internal" href="retweets_of_me">GET statuses/retweets_of_me</a></li>
+<li class="toctree-l3"><a class="reference internal" href="show/id">GET statuses/show/:id</a></li>
+<li class="toctree-l3"><a class="reference internal" href="user_timeline">GET statuses/user_timeline</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../trends/available">GET trends/available</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../trends/closest">GET trends/closest</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../trends/place">GET trends/place</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../users/lookup">GET users/lookup</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../users/profile_banner">GET users/profile_banner</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../users/search">GET users/search</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../users/show">GET users/show</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../users/suggestions">GET users/suggestions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../users/suggestions/slug">GET users/suggestions/:slug</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../users/suggestions/slug/members">GET users/suggestions/:slug/members</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../post/account/remove_profile_banner">POST account/remove_profile_banner</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../post/account/settings">POST account/settings</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../post/account/update_profile">POST account/update_profile</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../post/account/update_profile_background_image">POST account/update_profile_background_image</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../post/account/update_profile_banner">POST account/update_profile_banner</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../post/account/update_profile_image">POST account/update_profile_image</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../post/blocks/create">POST blocks/create</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../post/blocks/destroy">POST blocks/destroy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../post/collections/create">POST collections/create</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../post/collections/destroy">POST collections/destroy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../post/collections/entries/add">POST collections/entries/add</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../post/collections/entries/curate">POST collections/entries/curate</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../post/collections/entries/move">POST collections/entries/move</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../post/collections/entries/remove">POST collections/entries/remove</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../post/collections/update">POST collections/update</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../post/direct_messages/destroy">POST direct_messages/destroy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../post/direct_messages/events/new">POST direct_messages/events/new (message_create)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../post/direct_messages/new">POST direct_messages/new</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../post/direct_messages/welcome_messages/new">POST direct_messages/welcome_messages/new</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../post/direct_messages/welcome_messages/rules/new">POST direct_messages/welcome_messages/rules/new</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../post/favorites/create">POST favorites/create</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../post/favorites/destroy">POST favorites/destroy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../post/friendships/create">POST friendships/create</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../post/friendships/destroy">POST friendships/destroy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../post/friendships/update">POST friendships/update</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../post/geo/place">POST geo/place</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../post/lists/create">POST lists/create</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../post/lists/destroy">POST lists/destroy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../post/lists/members/create">POST lists/members/create</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../post/lists/members/create_all">POST lists/members/create_all</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../post/lists/members/destroy">POST lists/members/destroy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../post/lists/members/destroy_all">POST lists/members/destroy_all</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../post/lists/subscribers/create">POST lists/subscribers/create</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../post/lists/subscribers/destroy">POST lists/subscribers/destroy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../post/lists/update">POST lists/update</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../post/media/metadata/create">POST media/metadata/create</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../post/media/upload">POST media/upload</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../post/media/upload-append">POST media/upload (APPEND)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../post/media/upload-finalize">POST media/upload (FINALIZE)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../post/media/upload-init">POST media/upload (INIT)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../post/mutes/users/create">POST mutes/users/create</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../post/mutes/users/destroy">POST mutes/users/destroy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../post/saved_searches/create">POST saved_searches/create</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../post/saved_searches/destroy/id">POST saved_searches/destroy/:id</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../post/statuses/destroy/id">POST statuses/destroy/:id</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../post/statuses/retweet/id">POST statuses/retweet/:id</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../post/statuses/unretweet/id">POST statuses/unretweet/:id</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../post/statuses/update">POST statuses/update</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../post/statuses/update_with_media">POST statuses/update_with_media (deprecated)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../post/users/report_spam">POST users/report_spam</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../del/direct_messages/welcome_messages/destroy">DELETE direct_messages/welcome_messages/destroy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../del/direct_messages/welcome_messages/rules/destroy">DELETE direct_messages/welcome_messages/rules/destroy</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../streaming/overview">Streaming APIs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../webhooks">Webhook APIs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../ads">Ads API</a></li>
+<li class="toctree-l1"><a class="reference external" href="http://support.gnip.com/apis/">Gnip</a></li>
+<li class="toctree-l1"><a class="reference external" href="http://www.mopub.com/resources/docs/">MoPub</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Tools &amp; Support</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference external" href="https://apps.twitter.com">My apps</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../tools/console">API console</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../overview/status">API status</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Translations</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../ja">日本語</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../pt">Português, Brasil</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../es">Español</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../fr">Français</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Resources</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../resources/twitter-libraries">Libraries</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://twitterdev.github.io">Sample code</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../resources/playbooks">Playbooks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../resources/case-studies">Case studies</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../resources/signup">Join the community</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../resources/events">Events</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../overview/terms">Developer terms</a></li>
+</ul>
+
+                
+              
+        </div>
+
+        <div id="main" class="col-xs-12 col-sm-9">
+
+          <p class="visible-xs">
+            <button id="nav-toggle" type="button" class="btn btn-primary btn-xs" data-toggle="offcanvas">Show navigation &raquo;</button>
+          </p>
+
+          
+          <div class="container-fluid">
+            <div id="main-content" class="rst-content">
+              <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+               <div itemprop="articleBody">
+                
+  <div class="section" id="get-statuses-home-timeline">
+<h1>GET statuses/home_timeline<a class="headerlink" href="#get-statuses-home-timeline" title="Permalink to this headline">¶</a></h1>
+<div class="toctree-wrapper compound" id="id1">
+</div>
+<p>Returns a collection of the most recent <a class="reference external" href="/overview/api/tweets">Tweets</a> and retweets posted by the authenticating user and the users they follow. The home timeline is central to how most users interact with the Twitter service.</p>
+<p>Up to 800 Tweets are obtainable on the home timeline. It is more volatile for users that follow many users or follow users who Tweet frequently.</p>
+<p>See <a class="reference external" href="/rest/public/timelines">Working with Timelines</a> for instructions on traversing timelines efficiently.</p>
+<div class="section" id="resource-url">
+<h2>Resource URL<a class="headerlink" href="#resource-url" title="Permalink to this headline">¶</a></h2>
+<p><cite>https://api.twitter.com/1.1/statuses/home_timeline.json</cite></p>
+</div>
+<div class="section" id="resource-information">
+<h2>Resource Information<a class="headerlink" href="#resource-information" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="docutils">
+<colgroup>
+<col width="60%" />
+<col width="40%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td>Response formats</td>
+<td>JSON</td>
+</tr>
+<tr class="row-even"><td>Requires authentication?</td>
+<td>Yes (user context only)</td>
+</tr>
+<tr class="row-odd"><td>Rate limited?</td>
+<td>Yes</td>
+</tr>
+<tr class="row-even"><td>Requests / 15-min window (user auth)</td>
+<td>15</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="parameters">
+<h2>Parameters<a class="headerlink" href="#parameters" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="docutils">
+<colgroup>
+<col width="20%" />
+<col width="20%" />
+<col width="20%" />
+<col width="20%" />
+<col width="20%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td>Name</td>
+<td>Required</td>
+<td>Description</td>
+<td>Default Value</td>
+<td>Example</td>
+</tr>
+<tr class="row-even"><td>count</td>
+<td>optional</td>
+<td>Specifies the number of records to retrieve. Must be less than or equal to 200.
+Defaults to 20. The value of count is best thought of as a limit to the number
+of tweets to return because suspended or deleted content is removed after the
+count has been applied.</td>
+<td>&nbsp;</td>
+<td><em>5</em></td>
+</tr>
+<tr class="row-odd"><td>since_id</td>
+<td>optional</td>
+<td>Returns results with an ID greater than (that is, more recent than) the
+specified ID. There are limits to the number of Tweets which can be accessed
+through the API. If the limit of Tweets has occured since the since_id, the
+since_id will be forced to the oldest ID available.</td>
+<td>&nbsp;</td>
+<td><em>12345</em></td>
+</tr>
+<tr class="row-even"><td>max_id</td>
+<td>optional</td>
+<td>Returns results with an ID less than (that is, older than) or equal to the
+specified ID.</td>
+<td>&nbsp;</td>
+<td><em>54321</em></td>
+</tr>
+<tr class="row-odd"><td>trim_user</td>
+<td>optional</td>
+<td>When set to either <em>true</em> , <em>t</em> or <em>1</em> , each Tweet returned in a timeline will
+include a user object including only the status authors numerical ID. Omit this
+parameter to receive the complete user object.</td>
+<td>&nbsp;</td>
+<td><em>true</em></td>
+</tr>
+<tr class="row-even"><td>exclude_replies</td>
+<td>optional</td>
+<td>This parameter will prevent replies from appearing in the returned timeline.
+Using <em>exclude_replies</em> with the <em>count</em> parameter will mean you will receive
+up-to count Tweets — this is because the <em>count</em> parameter retrieves that many
+Tweets before filtering out retweets and replies.</td>
+<td>&nbsp;</td>
+<td><em>true</em></td>
+</tr>
+<tr class="row-odd"><td>include_entities</td>
+<td>optional</td>
+<td>The <em>entities</em> node will not be included when set to <em>false</em>.</td>
+<td>&nbsp;</td>
+<td><em>false</em></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="example-request">
+<h2>Example Request<a class="headerlink" href="#example-request" title="Permalink to this headline">¶</a></h2>
+<p><cite>GET https://api.twitter.com/1.1/statuses/home_timeline.json</cite></p>
+</div>
+<div class="section" id="example-response">
+<h2>Example Response<a class="headerlink" href="#example-response" title="Permalink to this headline">¶</a></h2>
+<div class="code javascript highlight-python"><div class="highlight"><pre><span></span><span class="p">[</span>
+  <span class="p">{</span>
+    <span class="s2">&quot;coordinates&quot;</span><span class="p">:</span> <span class="n">null</span><span class="p">,</span>
+    <span class="s2">&quot;truncated&quot;</span><span class="p">:</span> <span class="n">false</span><span class="p">,</span>
+    <span class="s2">&quot;created_at&quot;</span><span class="p">:</span> <span class="s2">&quot;Tue Aug 28 21:16:23 +0000 2012&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;favorited&quot;</span><span class="p">:</span> <span class="n">false</span><span class="p">,</span>
+    <span class="s2">&quot;id_str&quot;</span><span class="p">:</span> <span class="s2">&quot;240558470661799936&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;in_reply_to_user_id_str&quot;</span><span class="p">:</span> <span class="n">null</span><span class="p">,</span>
+    <span class="s2">&quot;entities&quot;</span><span class="p">:</span> <span class="p">{</span>
+      <span class="s2">&quot;urls&quot;</span><span class="p">:</span> <span class="p">[</span>
+
+      <span class="p">],</span>
+      <span class="s2">&quot;hashtags&quot;</span><span class="p">:</span> <span class="p">[</span>
+
+      <span class="p">],</span>
+      <span class="s2">&quot;user_mentions&quot;</span><span class="p">:</span> <span class="p">[</span>
+
+      <span class="p">]</span>
+    <span class="p">},</span>
+    <span class="s2">&quot;text&quot;</span><span class="p">:</span> <span class="s2">&quot;just another test&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;contributors&quot;</span><span class="p">:</span> <span class="n">null</span><span class="p">,</span>
+    <span class="s2">&quot;id&quot;</span><span class="p">:</span> <span class="mi">240558470661799936</span><span class="p">,</span>
+    <span class="s2">&quot;retweet_count&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+    <span class="s2">&quot;in_reply_to_status_id_str&quot;</span><span class="p">:</span> <span class="n">null</span><span class="p">,</span>
+    <span class="s2">&quot;geo&quot;</span><span class="p">:</span> <span class="n">null</span><span class="p">,</span>
+    <span class="s2">&quot;retweeted&quot;</span><span class="p">:</span> <span class="n">false</span><span class="p">,</span>
+    <span class="s2">&quot;in_reply_to_user_id&quot;</span><span class="p">:</span> <span class="n">null</span><span class="p">,</span>
+    <span class="s2">&quot;place&quot;</span><span class="p">:</span> <span class="n">null</span><span class="p">,</span>
+    <span class="s2">&quot;source&quot;</span><span class="p">:</span> <span class="s2">&quot;OAuth Dancer Reborn&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;user&quot;</span><span class="p">:</span> <span class="p">{</span>
+      <span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;OAuth Dancer&quot;</span><span class="p">,</span>
+      <span class="s2">&quot;profile_sidebar_fill_color&quot;</span><span class="p">:</span> <span class="s2">&quot;DDEEF6&quot;</span><span class="p">,</span>
+      <span class="s2">&quot;profile_background_tile&quot;</span><span class="p">:</span> <span class="n">true</span><span class="p">,</span>
+      <span class="s2">&quot;profile_sidebar_border_color&quot;</span><span class="p">:</span> <span class="s2">&quot;C0DEED&quot;</span><span class="p">,</span>
+      <span class="s2">&quot;profile_image_url&quot;</span><span class="p">:</span> <span class="s2">&quot;http://a0.twimg.com/profile_images/730275945/oauth-dancer_normal.jpg&quot;</span><span class="p">,</span>
+      <span class="s2">&quot;created_at&quot;</span><span class="p">:</span> <span class="s2">&quot;Wed Mar 03 19:37:35 +0000 2010&quot;</span><span class="p">,</span>
+      <span class="s2">&quot;location&quot;</span><span class="p">:</span> <span class="s2">&quot;San Francisco, CA&quot;</span><span class="p">,</span>
+      <span class="s2">&quot;follow_request_sent&quot;</span><span class="p">:</span> <span class="n">false</span><span class="p">,</span>
+      <span class="s2">&quot;id_str&quot;</span><span class="p">:</span> <span class="s2">&quot;119476949&quot;</span><span class="p">,</span>
+      <span class="s2">&quot;is_translator&quot;</span><span class="p">:</span> <span class="n">false</span><span class="p">,</span>
+      <span class="s2">&quot;profile_link_color&quot;</span><span class="p">:</span> <span class="s2">&quot;0084B4&quot;</span><span class="p">,</span>
+      <span class="s2">&quot;entities&quot;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="s2">&quot;url&quot;</span><span class="p">:</span> <span class="p">{</span>
+          <span class="s2">&quot;urls&quot;</span><span class="p">:</span> <span class="p">[</span>
+            <span class="p">{</span>
+              <span class="s2">&quot;expanded_url&quot;</span><span class="p">:</span> <span class="n">null</span><span class="p">,</span>
+              <span class="s2">&quot;url&quot;</span><span class="p">:</span> <span class="s2">&quot;http://bit.ly/oauth-dancer&quot;</span><span class="p">,</span>
+              <span class="s2">&quot;indices&quot;</span><span class="p">:</span> <span class="p">[</span>
+                <span class="mi">0</span><span class="p">,</span>
+                <span class="mi">26</span>
+              <span class="p">],</span>
+              <span class="s2">&quot;display_url&quot;</span><span class="p">:</span> <span class="n">null</span>
+            <span class="p">}</span>
+          <span class="p">]</span>
+        <span class="p">},</span>
+        <span class="s2">&quot;description&quot;</span><span class="p">:</span> <span class="n">null</span>
+      <span class="p">},</span>
+      <span class="s2">&quot;default_profile&quot;</span><span class="p">:</span> <span class="n">false</span><span class="p">,</span>
+      <span class="s2">&quot;url&quot;</span><span class="p">:</span> <span class="s2">&quot;http://bit.ly/oauth-dancer&quot;</span><span class="p">,</span>
+      <span class="s2">&quot;contributors_enabled&quot;</span><span class="p">:</span> <span class="n">false</span><span class="p">,</span>
+      <span class="s2">&quot;favourites_count&quot;</span><span class="p">:</span> <span class="mi">7</span><span class="p">,</span>
+      <span class="s2">&quot;utc_offset&quot;</span><span class="p">:</span> <span class="n">null</span><span class="p">,</span>
+      <span class="s2">&quot;profile_image_url_https&quot;</span><span class="p">:</span> <span class="s2">&quot;https://si0.twimg.com/profile_images/730275945/oauth-dancer_normal.jpg&quot;</span><span class="p">,</span>
+      <span class="s2">&quot;id&quot;</span><span class="p">:</span> <span class="mi">119476949</span><span class="p">,</span>
+      <span class="s2">&quot;listed_count&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+      <span class="s2">&quot;profile_use_background_image&quot;</span><span class="p">:</span> <span class="n">true</span><span class="p">,</span>
+      <span class="s2">&quot;profile_text_color&quot;</span><span class="p">:</span> <span class="s2">&quot;333333&quot;</span><span class="p">,</span>
+      <span class="s2">&quot;followers_count&quot;</span><span class="p">:</span> <span class="mi">28</span><span class="p">,</span>
+      <span class="s2">&quot;lang&quot;</span><span class="p">:</span> <span class="s2">&quot;en&quot;</span><span class="p">,</span>
+      <span class="s2">&quot;protected&quot;</span><span class="p">:</span> <span class="n">false</span><span class="p">,</span>
+      <span class="s2">&quot;geo_enabled&quot;</span><span class="p">:</span> <span class="n">true</span><span class="p">,</span>
+      <span class="s2">&quot;notifications&quot;</span><span class="p">:</span> <span class="n">false</span><span class="p">,</span>
+      <span class="s2">&quot;description&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
+      <span class="s2">&quot;profile_background_color&quot;</span><span class="p">:</span> <span class="s2">&quot;C0DEED&quot;</span><span class="p">,</span>
+      <span class="s2">&quot;verified&quot;</span><span class="p">:</span> <span class="n">false</span><span class="p">,</span>
+      <span class="s2">&quot;time_zone&quot;</span><span class="p">:</span> <span class="n">null</span><span class="p">,</span>
+      <span class="s2">&quot;profile_background_image_url_https&quot;</span><span class="p">:</span> <span class="s2">&quot;https://si0.twimg.com/profile_background_images/80151733/oauth-dance.png&quot;</span><span class="p">,</span>
+      <span class="s2">&quot;statuses_count&quot;</span><span class="p">:</span> <span class="mi">166</span><span class="p">,</span>
+      <span class="s2">&quot;profile_background_image_url&quot;</span><span class="p">:</span> <span class="s2">&quot;http://a0.twimg.com/profile_background_images/80151733/oauth-dance.png&quot;</span><span class="p">,</span>
+      <span class="s2">&quot;default_profile_image&quot;</span><span class="p">:</span> <span class="n">false</span><span class="p">,</span>
+      <span class="s2">&quot;friends_count&quot;</span><span class="p">:</span> <span class="mi">14</span><span class="p">,</span>
+      <span class="s2">&quot;following&quot;</span><span class="p">:</span> <span class="n">false</span><span class="p">,</span>
+      <span class="s2">&quot;show_all_inline_media&quot;</span><span class="p">:</span> <span class="n">false</span><span class="p">,</span>
+      <span class="s2">&quot;screen_name&quot;</span><span class="p">:</span> <span class="s2">&quot;oauth_dancer&quot;</span>
+    <span class="p">},</span>
+    <span class="s2">&quot;in_reply_to_screen_name&quot;</span><span class="p">:</span> <span class="n">null</span><span class="p">,</span>
+    <span class="s2">&quot;in_reply_to_status_id&quot;</span><span class="p">:</span> <span class="n">null</span>
+  <span class="p">},</span>
+  <span class="p">{</span>
+    <span class="s2">&quot;coordinates&quot;</span><span class="p">:</span> <span class="p">{</span>
+      <span class="s2">&quot;coordinates&quot;</span><span class="p">:</span> <span class="p">[</span>
+        <span class="o">-</span><span class="mf">122.25831</span><span class="p">,</span>
+        <span class="mf">37.871609</span>
+      <span class="p">],</span>
+      <span class="s2">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;Point&quot;</span>
+    <span class="p">},</span>
+    <span class="s2">&quot;truncated&quot;</span><span class="p">:</span> <span class="n">false</span><span class="p">,</span>
+    <span class="s2">&quot;created_at&quot;</span><span class="p">:</span> <span class="s2">&quot;Tue Aug 28 21:08:15 +0000 2012&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;favorited&quot;</span><span class="p">:</span> <span class="n">false</span><span class="p">,</span>
+    <span class="s2">&quot;id_str&quot;</span><span class="p">:</span> <span class="s2">&quot;240556426106372096&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;in_reply_to_user_id_str&quot;</span><span class="p">:</span> <span class="n">null</span><span class="p">,</span>
+    <span class="s2">&quot;entities&quot;</span><span class="p">:</span> <span class="p">{</span>
+      <span class="s2">&quot;urls&quot;</span><span class="p">:</span> <span class="p">[</span>
+        <span class="p">{</span>
+          <span class="s2">&quot;expanded_url&quot;</span><span class="p">:</span> <span class="s2">&quot;http://blogs.ischool.berkeley.edu/i290-abdt-s12/&quot;</span><span class="p">,</span>
+          <span class="s2">&quot;url&quot;</span><span class="p">:</span> <span class="s2">&quot;http://t.co/bfj7zkDJ&quot;</span><span class="p">,</span>
+          <span class="s2">&quot;indices&quot;</span><span class="p">:</span> <span class="p">[</span>
+            <span class="mi">79</span><span class="p">,</span>
+            <span class="mi">99</span>
+          <span class="p">],</span>
+          <span class="s2">&quot;display_url&quot;</span><span class="p">:</span> <span class="s2">&quot;blogs.ischool.berkeley.edu/i290-abdt-s12/&quot;</span>
+        <span class="p">}</span>
+      <span class="p">],</span>
+      <span class="s2">&quot;hashtags&quot;</span><span class="p">:</span> <span class="p">[</span>
+
+      <span class="p">],</span>
+      <span class="s2">&quot;user_mentions&quot;</span><span class="p">:</span> <span class="p">[</span>
+        <span class="p">{</span>
+          <span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;Cal&quot;</span><span class="p">,</span>
+          <span class="s2">&quot;id_str&quot;</span><span class="p">:</span> <span class="s2">&quot;17445752&quot;</span><span class="p">,</span>
+          <span class="s2">&quot;id&quot;</span><span class="p">:</span> <span class="mi">17445752</span><span class="p">,</span>
+          <span class="s2">&quot;indices&quot;</span><span class="p">:</span> <span class="p">[</span>
+            <span class="mi">60</span><span class="p">,</span>
+            <span class="mi">64</span>
+          <span class="p">],</span>
+          <span class="s2">&quot;screen_name&quot;</span><span class="p">:</span> <span class="s2">&quot;Cal&quot;</span>
+        <span class="p">},</span>
+        <span class="p">{</span>
+          <span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;Othman Laraki&quot;</span><span class="p">,</span>
+          <span class="s2">&quot;id_str&quot;</span><span class="p">:</span> <span class="s2">&quot;20495814&quot;</span><span class="p">,</span>
+          <span class="s2">&quot;id&quot;</span><span class="p">:</span> <span class="mi">20495814</span><span class="p">,</span>
+          <span class="s2">&quot;indices&quot;</span><span class="p">:</span> <span class="p">[</span>
+            <span class="mi">70</span><span class="p">,</span>
+            <span class="mi">77</span>
+          <span class="p">],</span>
+          <span class="s2">&quot;screen_name&quot;</span><span class="p">:</span> <span class="s2">&quot;othman&quot;</span>
+        <span class="p">}</span>
+      <span class="p">]</span>
+    <span class="p">},</span>
+    <span class="s2">&quot;text&quot;</span><span class="p">:</span> <span class="s2">&quot;lecturing at the </span><span class="se">\&quot;</span><span class="s2">analyzing big data with twitter</span><span class="se">\&quot;</span><span class="s2"> class at @cal with @othman  http://t.co/bfj7zkDJ&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;contributors&quot;</span><span class="p">:</span> <span class="n">null</span><span class="p">,</span>
+    <span class="s2">&quot;id&quot;</span><span class="p">:</span> <span class="mi">240556426106372096</span><span class="p">,</span>
+    <span class="s2">&quot;retweet_count&quot;</span><span class="p">:</span> <span class="mi">3</span><span class="p">,</span>
+    <span class="s2">&quot;in_reply_to_status_id_str&quot;</span><span class="p">:</span> <span class="n">null</span><span class="p">,</span>
+    <span class="s2">&quot;geo&quot;</span><span class="p">:</span> <span class="p">{</span>
+      <span class="s2">&quot;coordinates&quot;</span><span class="p">:</span> <span class="p">[</span>
+        <span class="mf">37.871609</span><span class="p">,</span>
+        <span class="o">-</span><span class="mf">122.25831</span>
+      <span class="p">],</span>
+      <span class="s2">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;Point&quot;</span>
+    <span class="p">},</span>
+    <span class="s2">&quot;retweeted&quot;</span><span class="p">:</span> <span class="n">false</span><span class="p">,</span>
+    <span class="s2">&quot;possibly_sensitive&quot;</span><span class="p">:</span> <span class="n">false</span><span class="p">,</span>
+    <span class="s2">&quot;in_reply_to_user_id&quot;</span><span class="p">:</span> <span class="n">null</span><span class="p">,</span>
+    <span class="s2">&quot;place&quot;</span><span class="p">:</span> <span class="p">{</span>
+      <span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;Berkeley&quot;</span><span class="p">,</span>
+      <span class="s2">&quot;country_code&quot;</span><span class="p">:</span> <span class="s2">&quot;US&quot;</span><span class="p">,</span>
+      <span class="s2">&quot;country&quot;</span><span class="p">:</span> <span class="s2">&quot;United States&quot;</span><span class="p">,</span>
+      <span class="s2">&quot;attributes&quot;</span><span class="p">:</span> <span class="p">{</span>
+      <span class="p">},</span>
+      <span class="s2">&quot;url&quot;</span><span class="p">:</span> <span class="s2">&quot;http://api.twitter.com/1/geo/id/5ef5b7f391e30aff.json&quot;</span><span class="p">,</span>
+      <span class="s2">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;5ef5b7f391e30aff&quot;</span><span class="p">,</span>
+      <span class="s2">&quot;bounding_box&quot;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="s2">&quot;coordinates&quot;</span><span class="p">:</span> <span class="p">[</span>
+          <span class="p">[</span>
+            <span class="p">[</span>
+              <span class="o">-</span><span class="mf">122.367781</span><span class="p">,</span>
+              <span class="mf">37.835727</span>
+            <span class="p">],</span>
+            <span class="p">[</span>
+              <span class="o">-</span><span class="mf">122.234185</span><span class="p">,</span>
+              <span class="mf">37.835727</span>
+            <span class="p">],</span>
+            <span class="p">[</span>
+              <span class="o">-</span><span class="mf">122.234185</span><span class="p">,</span>
+              <span class="mf">37.905824</span>
+            <span class="p">],</span>
+            <span class="p">[</span>
+              <span class="o">-</span><span class="mf">122.367781</span><span class="p">,</span>
+              <span class="mf">37.905824</span>
+            <span class="p">]</span>
+          <span class="p">]</span>
+        <span class="p">],</span>
+        <span class="s2">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;Polygon&quot;</span>
+      <span class="p">},</span>
+      <span class="s2">&quot;full_name&quot;</span><span class="p">:</span> <span class="s2">&quot;Berkeley, CA&quot;</span><span class="p">,</span>
+      <span class="s2">&quot;place_type&quot;</span><span class="p">:</span> <span class="s2">&quot;city&quot;</span>
+    <span class="p">},</span>
+    <span class="s2">&quot;source&quot;</span><span class="p">:</span> <span class="s2">&quot;Safari on iOS&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;user&quot;</span><span class="p">:</span> <span class="p">{</span>
+      <span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;Raffi Krikorian&quot;</span><span class="p">,</span>
+      <span class="s2">&quot;profile_sidebar_fill_color&quot;</span><span class="p">:</span> <span class="s2">&quot;DDEEF6&quot;</span><span class="p">,</span>
+      <span class="s2">&quot;profile_background_tile&quot;</span><span class="p">:</span> <span class="n">false</span><span class="p">,</span>
+      <span class="s2">&quot;profile_sidebar_border_color&quot;</span><span class="p">:</span> <span class="s2">&quot;C0DEED&quot;</span><span class="p">,</span>
+      <span class="s2">&quot;profile_image_url&quot;</span><span class="p">:</span> <span class="s2">&quot;http://a0.twimg.com/profile_images/1270234259/raffi-headshot-casual_normal.png&quot;</span><span class="p">,</span>
+      <span class="s2">&quot;created_at&quot;</span><span class="p">:</span> <span class="s2">&quot;Sun Aug 19 14:24:06 +0000 2007&quot;</span><span class="p">,</span>
+      <span class="s2">&quot;location&quot;</span><span class="p">:</span> <span class="s2">&quot;San Francisco, California&quot;</span><span class="p">,</span>
+      <span class="s2">&quot;follow_request_sent&quot;</span><span class="p">:</span> <span class="n">false</span><span class="p">,</span>
+      <span class="s2">&quot;id_str&quot;</span><span class="p">:</span> <span class="s2">&quot;8285392&quot;</span><span class="p">,</span>
+      <span class="s2">&quot;is_translator&quot;</span><span class="p">:</span> <span class="n">false</span><span class="p">,</span>
+      <span class="s2">&quot;profile_link_color&quot;</span><span class="p">:</span> <span class="s2">&quot;0084B4&quot;</span><span class="p">,</span>
+      <span class="s2">&quot;entities&quot;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="s2">&quot;url&quot;</span><span class="p">:</span> <span class="p">{</span>
+          <span class="s2">&quot;urls&quot;</span><span class="p">:</span> <span class="p">[</span>
+            <span class="p">{</span>
+              <span class="s2">&quot;expanded_url&quot;</span><span class="p">:</span> <span class="s2">&quot;http://about.me/raffi.krikorian&quot;</span><span class="p">,</span>
+              <span class="s2">&quot;url&quot;</span><span class="p">:</span> <span class="s2">&quot;http://t.co/eNmnM6q&quot;</span><span class="p">,</span>
+              <span class="s2">&quot;indices&quot;</span><span class="p">:</span> <span class="p">[</span>
+                <span class="mi">0</span><span class="p">,</span>
+                <span class="mi">19</span>
+              <span class="p">],</span>
+              <span class="s2">&quot;display_url&quot;</span><span class="p">:</span> <span class="s2">&quot;about.me/raffi.krikorian&quot;</span>
+            <span class="p">}</span>
+          <span class="p">]</span>
+        <span class="p">},</span>
+        <span class="s2">&quot;description&quot;</span><span class="p">:</span> <span class="p">{</span>
+          <span class="s2">&quot;urls&quot;</span><span class="p">:</span> <span class="p">[</span>
+
+          <span class="p">]</span>
+        <span class="p">}</span>
+      <span class="p">},</span>
+      <span class="s2">&quot;default_profile&quot;</span><span class="p">:</span> <span class="n">true</span><span class="p">,</span>
+      <span class="s2">&quot;url&quot;</span><span class="p">:</span> <span class="s2">&quot;http://t.co/eNmnM6q&quot;</span><span class="p">,</span>
+      <span class="s2">&quot;contributors_enabled&quot;</span><span class="p">:</span> <span class="n">false</span><span class="p">,</span>
+      <span class="s2">&quot;favourites_count&quot;</span><span class="p">:</span> <span class="mi">724</span><span class="p">,</span>
+      <span class="s2">&quot;utc_offset&quot;</span><span class="p">:</span> <span class="o">-</span><span class="mi">28800</span><span class="p">,</span>
+      <span class="s2">&quot;profile_image_url_https&quot;</span><span class="p">:</span> <span class="s2">&quot;https://si0.twimg.com/profile_images/1270234259/raffi-headshot-casual_normal.png&quot;</span><span class="p">,</span>
+      <span class="s2">&quot;id&quot;</span><span class="p">:</span> <span class="mi">8285392</span><span class="p">,</span>
+      <span class="s2">&quot;listed_count&quot;</span><span class="p">:</span> <span class="mi">619</span><span class="p">,</span>
+      <span class="s2">&quot;profile_use_background_image&quot;</span><span class="p">:</span> <span class="n">true</span><span class="p">,</span>
+      <span class="s2">&quot;profile_text_color&quot;</span><span class="p">:</span> <span class="s2">&quot;333333&quot;</span><span class="p">,</span>
+      <span class="s2">&quot;followers_count&quot;</span><span class="p">:</span> <span class="mi">18752</span><span class="p">,</span>
+      <span class="s2">&quot;lang&quot;</span><span class="p">:</span> <span class="s2">&quot;en&quot;</span><span class="p">,</span>
+      <span class="s2">&quot;protected&quot;</span><span class="p">:</span> <span class="n">false</span><span class="p">,</span>
+      <span class="s2">&quot;geo_enabled&quot;</span><span class="p">:</span> <span class="n">true</span><span class="p">,</span>
+      <span class="s2">&quot;notifications&quot;</span><span class="p">:</span> <span class="n">false</span><span class="p">,</span>
+      <span class="s2">&quot;description&quot;</span><span class="p">:</span> <span class="s2">&quot;Director of @twittereng&#39;s Platform Services. I break things.&quot;</span><span class="p">,</span>
+      <span class="s2">&quot;profile_background_color&quot;</span><span class="p">:</span> <span class="s2">&quot;C0DEED&quot;</span><span class="p">,</span>
+      <span class="s2">&quot;verified&quot;</span><span class="p">:</span> <span class="n">false</span><span class="p">,</span>
+      <span class="s2">&quot;time_zone&quot;</span><span class="p">:</span> <span class="s2">&quot;Pacific Time (US &amp; Canada)&quot;</span><span class="p">,</span>
+      <span class="s2">&quot;profile_background_image_url_https&quot;</span><span class="p">:</span> <span class="s2">&quot;https://si0.twimg.com/images/themes/theme1/bg.png&quot;</span><span class="p">,</span>
+      <span class="s2">&quot;statuses_count&quot;</span><span class="p">:</span> <span class="mi">5007</span><span class="p">,</span>
+      <span class="s2">&quot;profile_background_image_url&quot;</span><span class="p">:</span> <span class="s2">&quot;http://a0.twimg.com/images/themes/theme1/bg.png&quot;</span><span class="p">,</span>
+      <span class="s2">&quot;default_profile_image&quot;</span><span class="p">:</span> <span class="n">false</span><span class="p">,</span>
+      <span class="s2">&quot;friends_count&quot;</span><span class="p">:</span> <span class="mi">701</span><span class="p">,</span>
+      <span class="s2">&quot;following&quot;</span><span class="p">:</span> <span class="n">true</span><span class="p">,</span>
+      <span class="s2">&quot;show_all_inline_media&quot;</span><span class="p">:</span> <span class="n">true</span><span class="p">,</span>
+      <span class="s2">&quot;screen_name&quot;</span><span class="p">:</span> <span class="s2">&quot;raffi&quot;</span>
+    <span class="p">},</span>
+    <span class="s2">&quot;in_reply_to_screen_name&quot;</span><span class="p">:</span> <span class="n">null</span><span class="p">,</span>
+    <span class="s2">&quot;in_reply_to_status_id&quot;</span><span class="p">:</span> <span class="n">null</span>
+  <span class="p">},</span>
+  <span class="p">{</span>
+    <span class="s2">&quot;coordinates&quot;</span><span class="p">:</span> <span class="n">null</span><span class="p">,</span>
+    <span class="s2">&quot;truncated&quot;</span><span class="p">:</span> <span class="n">false</span><span class="p">,</span>
+    <span class="s2">&quot;created_at&quot;</span><span class="p">:</span> <span class="s2">&quot;Tue Aug 28 19:59:34 +0000 2012&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;favorited&quot;</span><span class="p">:</span> <span class="n">false</span><span class="p">,</span>
+    <span class="s2">&quot;id_str&quot;</span><span class="p">:</span> <span class="s2">&quot;240539141056638977&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;in_reply_to_user_id_str&quot;</span><span class="p">:</span> <span class="n">null</span><span class="p">,</span>
+    <span class="s2">&quot;entities&quot;</span><span class="p">:</span> <span class="p">{</span>
+      <span class="s2">&quot;urls&quot;</span><span class="p">:</span> <span class="p">[</span>
+
+      <span class="p">],</span>
+      <span class="s2">&quot;hashtags&quot;</span><span class="p">:</span> <span class="p">[</span>
+
+      <span class="p">],</span>
+      <span class="s2">&quot;user_mentions&quot;</span><span class="p">:</span> <span class="p">[</span>
+
+      <span class="p">]</span>
+    <span class="p">},</span>
+    <span class="s2">&quot;text&quot;</span><span class="p">:</span> <span class="s2">&quot;You&#39;d be right more often if you thought you were wrong.&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;contributors&quot;</span><span class="p">:</span> <span class="n">null</span><span class="p">,</span>
+    <span class="s2">&quot;id&quot;</span><span class="p">:</span> <span class="mi">240539141056638977</span><span class="p">,</span>
+    <span class="s2">&quot;retweet_count&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+    <span class="s2">&quot;in_reply_to_status_id_str&quot;</span><span class="p">:</span> <span class="n">null</span><span class="p">,</span>
+    <span class="s2">&quot;geo&quot;</span><span class="p">:</span> <span class="n">null</span><span class="p">,</span>
+    <span class="s2">&quot;retweeted&quot;</span><span class="p">:</span> <span class="n">false</span><span class="p">,</span>
+    <span class="s2">&quot;in_reply_to_user_id&quot;</span><span class="p">:</span> <span class="n">null</span><span class="p">,</span>
+    <span class="s2">&quot;place&quot;</span><span class="p">:</span> <span class="n">null</span><span class="p">,</span>
+    <span class="s2">&quot;source&quot;</span><span class="p">:</span> <span class="s2">&quot;web&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;user&quot;</span><span class="p">:</span> <span class="p">{</span>
+      <span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;Taylor Singletary&quot;</span><span class="p">,</span>
+      <span class="s2">&quot;profile_sidebar_fill_color&quot;</span><span class="p">:</span> <span class="s2">&quot;FBFBFB&quot;</span><span class="p">,</span>
+      <span class="s2">&quot;profile_background_tile&quot;</span><span class="p">:</span> <span class="n">true</span><span class="p">,</span>
+      <span class="s2">&quot;profile_sidebar_border_color&quot;</span><span class="p">:</span> <span class="s2">&quot;000000&quot;</span><span class="p">,</span>
+      <span class="s2">&quot;profile_image_url&quot;</span><span class="p">:</span> <span class="s2">&quot;http://a0.twimg.com/profile_images/2546730059/f6a8zq58mg1hn0ha8vie_normal.jpeg&quot;</span><span class="p">,</span>
+      <span class="s2">&quot;created_at&quot;</span><span class="p">:</span> <span class="s2">&quot;Wed Mar 07 22:23:19 +0000 2007&quot;</span><span class="p">,</span>
+      <span class="s2">&quot;location&quot;</span><span class="p">:</span> <span class="s2">&quot;San Francisco, CA&quot;</span><span class="p">,</span>
+      <span class="s2">&quot;follow_request_sent&quot;</span><span class="p">:</span> <span class="n">false</span><span class="p">,</span>
+      <span class="s2">&quot;id_str&quot;</span><span class="p">:</span> <span class="s2">&quot;819797&quot;</span><span class="p">,</span>
+      <span class="s2">&quot;is_translator&quot;</span><span class="p">:</span> <span class="n">false</span><span class="p">,</span>
+      <span class="s2">&quot;profile_link_color&quot;</span><span class="p">:</span> <span class="s2">&quot;c71818&quot;</span><span class="p">,</span>
+      <span class="s2">&quot;entities&quot;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="s2">&quot;url&quot;</span><span class="p">:</span> <span class="p">{</span>
+          <span class="s2">&quot;urls&quot;</span><span class="p">:</span> <span class="p">[</span>
+            <span class="p">{</span>
+              <span class="s2">&quot;expanded_url&quot;</span><span class="p">:</span> <span class="s2">&quot;http://www.rebelmouse.com/episod/&quot;</span><span class="p">,</span>
+              <span class="s2">&quot;url&quot;</span><span class="p">:</span> <span class="s2">&quot;http://t.co/Lxw7upbN&quot;</span><span class="p">,</span>
+              <span class="s2">&quot;indices&quot;</span><span class="p">:</span> <span class="p">[</span>
+                <span class="mi">0</span><span class="p">,</span>
+                <span class="mi">20</span>
+              <span class="p">],</span>
+              <span class="s2">&quot;display_url&quot;</span><span class="p">:</span> <span class="s2">&quot;rebelmouse.com/episod/&quot;</span>
+            <span class="p">}</span>
+          <span class="p">]</span>
+        <span class="p">},</span>
+        <span class="s2">&quot;description&quot;</span><span class="p">:</span> <span class="p">{</span>
+          <span class="s2">&quot;urls&quot;</span><span class="p">:</span> <span class="p">[</span>
+
+          <span class="p">]</span>
+        <span class="p">}</span>
+      <span class="p">},</span>
+      <span class="s2">&quot;default_profile&quot;</span><span class="p">:</span> <span class="n">false</span><span class="p">,</span>
+      <span class="s2">&quot;url&quot;</span><span class="p">:</span> <span class="s2">&quot;http://t.co/Lxw7upbN&quot;</span><span class="p">,</span>
+      <span class="s2">&quot;contributors_enabled&quot;</span><span class="p">:</span> <span class="n">false</span><span class="p">,</span>
+      <span class="s2">&quot;favourites_count&quot;</span><span class="p">:</span> <span class="mi">15990</span><span class="p">,</span>
+      <span class="s2">&quot;utc_offset&quot;</span><span class="p">:</span> <span class="o">-</span><span class="mi">28800</span><span class="p">,</span>
+      <span class="s2">&quot;profile_image_url_https&quot;</span><span class="p">:</span> <span class="s2">&quot;https://si0.twimg.com/profile_images/2546730059/f6a8zq58mg1hn0ha8vie_normal.jpeg&quot;</span><span class="p">,</span>
+      <span class="s2">&quot;id&quot;</span><span class="p">:</span> <span class="mi">819797</span><span class="p">,</span>
+      <span class="s2">&quot;listed_count&quot;</span><span class="p">:</span> <span class="mi">340</span><span class="p">,</span>
+      <span class="s2">&quot;profile_use_background_image&quot;</span><span class="p">:</span> <span class="n">true</span><span class="p">,</span>
+      <span class="s2">&quot;profile_text_color&quot;</span><span class="p">:</span> <span class="s2">&quot;D20909&quot;</span><span class="p">,</span>
+      <span class="s2">&quot;followers_count&quot;</span><span class="p">:</span> <span class="mi">7126</span><span class="p">,</span>
+      <span class="s2">&quot;lang&quot;</span><span class="p">:</span> <span class="s2">&quot;en&quot;</span><span class="p">,</span>
+      <span class="s2">&quot;protected&quot;</span><span class="p">:</span> <span class="n">false</span><span class="p">,</span>
+      <span class="s2">&quot;geo_enabled&quot;</span><span class="p">:</span> <span class="n">true</span><span class="p">,</span>
+      <span class="s2">&quot;notifications&quot;</span><span class="p">:</span> <span class="n">false</span><span class="p">,</span>
+      <span class="s2">&quot;description&quot;</span><span class="p">:</span> <span class="s2">&quot;Reality Technician, Twitter API team, synthesizer enthusiast; a most excellent adventure in timelines. I know it&#39;s hard to believe in something you can&#39;t see.&quot;</span><span class="p">,</span>
+      <span class="s2">&quot;profile_background_color&quot;</span><span class="p">:</span> <span class="s2">&quot;000000&quot;</span><span class="p">,</span>
+      <span class="s2">&quot;verified&quot;</span><span class="p">:</span> <span class="n">false</span><span class="p">,</span>
+      <span class="s2">&quot;time_zone&quot;</span><span class="p">:</span> <span class="s2">&quot;Pacific Time (US &amp; Canada)&quot;</span><span class="p">,</span>
+      <span class="s2">&quot;profile_background_image_url_https&quot;</span><span class="p">:</span> <span class="s2">&quot;https://si0.twimg.com/profile_background_images/643655842/hzfv12wini4q60zzrthg.png&quot;</span><span class="p">,</span>
+      <span class="s2">&quot;statuses_count&quot;</span><span class="p">:</span> <span class="mi">18076</span><span class="p">,</span>
+      <span class="s2">&quot;profile_background_image_url&quot;</span><span class="p">:</span> <span class="s2">&quot;http://a0.twimg.com/profile_background_images/643655842/hzfv12wini4q60zzrthg.png&quot;</span><span class="p">,</span>
+      <span class="s2">&quot;default_profile_image&quot;</span><span class="p">:</span> <span class="n">false</span><span class="p">,</span>
+      <span class="s2">&quot;friends_count&quot;</span><span class="p">:</span> <span class="mi">5444</span><span class="p">,</span>
+      <span class="s2">&quot;following&quot;</span><span class="p">:</span> <span class="n">true</span><span class="p">,</span>
+      <span class="s2">&quot;show_all_inline_media&quot;</span><span class="p">:</span> <span class="n">true</span><span class="p">,</span>
+      <span class="s2">&quot;screen_name&quot;</span><span class="p">:</span> <span class="s2">&quot;episod&quot;</span>
+    <span class="p">},</span>
+    <span class="s2">&quot;in_reply_to_screen_name&quot;</span><span class="p">:</span> <span class="n">null</span><span class="p">,</span>
+    <span class="s2">&quot;in_reply_to_status_id&quot;</span><span class="p">:</span> <span class="n">null</span>
+  <span class="p">}</span>
+<span class="p">]</span>
+</pre></div>
+</div>
+</div>
+</div>
+
+
+               </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <footer class="comp-wrapper nav-footer">
+      <div class="comp-container container">
+        <div class="row">
+          <div class="col-sm-2">
+            <dl>
+              <dt>Solutions</dt>
+              <dd><a href="/build" title="Build">Build</a></dd>
+              <dd><a href="/solutions/customer-service" title="Customer service">Customer service</a></dd>
+              <dd><a href="/solutions/tell-great-stories" title="Tell great stories">Tell great stories</a></dd>
+            </dl>
+          </div>
+          <div class="col-sm-2">
+            <dl>
+              <dt>Products</dt>
+              <dd><a href="/products/web" title="Publisher platform">Publisher platform</a></dd>
+              <dd><a href="/twitterkit/overview" title="Twitter Kit">Twitter Kit</a></dd>
+              <dd><a href="../../../public" title="REST APIs">REST APIs</a></dd>
+              <dd><a href="../../../../streaming/public" title="Streaming APIs">Streaming APIs</a></dd>
+              <dd><a href="../../../../ads" title="Ads API">Ads API</a></dd>
+              <dd><a href="https://gnip.com" title="Gnip" target="_blank">Gnip</a></dd>
+            </dl>
+          </div>
+          <div class="col-sm-2">
+            <dl>
+              <dt>Resources</dt>
+              <dd><a href="../../../../docs" title="Documentation">Documentation</a></dd>
+              <dd><a href="https://twittercommunity.com" title="Forums" target="_blank">Forums</a></dd>
+              <dd><a href="https://blog.twitter.com/developer" title="Blog" target="_blank">Blog</a></dd>
+              <dd><a href="../../../../resources/case-studies" title="Case studies">Case studies</a></dd>
+              <dd><a href="../../../../overview/terms" title="Developer terms">Developer terms</a></dd>
+              <dd><a href="https://support.twitter.com/forms/platform" title="Policy support" target="_blank">Policy support</a></dd>
+            </dl>
+          </div>
+          <div class="col-sm-2">
+            <dl>
+              <dt>Tools</dt>
+              <dd><a href="../../../../overview/status" title="API status">API status</a></dd>
+              <dd><a href="../../../tools/console" title="API console">API console</a></dd>
+              <dd><a href="https://cards-dev.twitter.com/validator" title="Cards validator" target="_blank">Cards validator</a></dd>
+              <dd><a href="https://apps.twitter.com" title="Manage my apps" target="_blank">Manage my apps</a></dd>
+            </dl>
+          </div>
+          <div class="col-sm-2">
+            <dl>
+              <dt>Community</dt>
+              <dd><a href="/community/meetups" title="#TapIntoTwitter">#TapIntoTwitter</a></dd>
+              <dd><a href="https://partners.twitter.com" title="Official partner" target="_blank">Official partner</a></dd>
+              <dd><a href="/events" title="Events">Events</a></dd>
+              <dd><a href="/flight/2015" title="Flight 2015">Flight 2015</a></dd>
+              <dd><a href="/flight/2014" title="Flight 2014">Flight 2014</a></dd>
+            </dl>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="comp-container container">
+          <div class="row">
+            <ul class="col-xs-6">
+              <div class="copyright">&copy; 2017 Twitter, Inc.</div>
+              <li><a href="https://twitter.com/tos" title="Terms">Terms</a></li>
+              <li><a href="https://twitter.com/privacy" title="Privacy">Privacy</a></li>
+            </ul>
+            <ul class="text-right col-xs-6">
+              <li><a href="https://about.twitter.com/company" title="About">About</a></li>
+              <li><a href="https://careers.twitter.com" title="Jobs">Jobs</a></li>
+              <li><a href="https://support.twitter.com/" title="Help">Help</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+  
+    <!-- JavaScript -->
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../../../../',
+            VERSION:'4.0',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="https://ton.twimg.com/dtc/181b426f-2a88-4718-90bb-cb8296b91c60/_static/jquery.js"></script>
+    <!-- JavaScript -->
+  
+
+  <script type="text/javascript">
+    $(document).ready(function () {
+
+      $('[data-toggle="offcanvas"]').click(function () {
+          $('.row-offcanvas').toggleClass('active');
+      });
+
+      $('#nav-toggle').click(function () {
+          if ($('.row-offcanvas').hasClass('active')) {
+              $(this).html("&laquo; Hide Navigation");
+          } else {
+              $(this).html("Show Navigation &raquo;");
+          }
+      });
+      // Only set overflow-x: scroll on sections with tables
+      $('.section').has('table').css('overflow-x', 'scroll');
+    });
+
+  </script>
+  <script type="text/javascript" src="https://ton.twimg.com/dtc/181b426f-2a88-4718-90bb-cb8296b91c60/_static/js/common.js"></script>
+
+  <script type="text/javascript" src="https://ton.twimg.com/dtc/181b426f-2a88-4718-90bb-cb8296b91c60/_static/js/navigation.js"></script>
+
+  
+  
+    <script type="text/javascript" src="https://ton.twimg.com/dtc/181b426f-2a88-4718-90bb-cb8296b91c60/_static/js/theme.js"></script>
+  
+
+  <script src="https://ton.twimg.com/dtc/181b426f-2a88-4718-90bb-cb8296b91c60/_static/scripts/vendor.js"></script>
+  <script src="https://platform.twitter.com/widgets.js" async></script>
+  <script src="https://ton.twimg.com/dtc/181b426f-2a88-4718-90bb-cb8296b91c60/_static/scripts/app.js"></script>
+  <script src="https://ton.twimg.com/dtc/181b426f-2a88-4718-90bb-cb8296b91c60/_static/scripts/google-analytics.js"></script> 
+
+</body>
+</html>
+2017-06-10 14:26:34   INFO [hotlineTests.GetIPhone] : Chrome will be started 
+2017-06-10 14:26:39   INFO [hotlineTests.GetIPhone] : Chrome is started
+2017-06-10 14:26:39  ERROR [pages.BasePage] : Can't execute test data from excel file
+2017-06-10 14:26:40   INFO [libs.Utils] : ScreenShot: D:\ExamProject\target\screenshots\hotlineTests\GetIPhone\findIPhone[0].jpg
+2017-06-10 14:26:40   INFO [libs.Utils] : ScreenShot: D:\ExamProject\target\screenshots\hotlineTests\GetIPhone\findIPhone[0].jpg
+2017-06-10 14:26:41   INFO [hotlineTests.GetIPhone] : FireFox will be started 
+2017-06-10 14:26:46   INFO [hotlineTests.GetIPhone] : FireFox is started
+2017-06-10 14:26:46  ERROR [pages.BasePage] : Can't execute test data from excel file
+2017-06-10 14:26:46   INFO [libs.Utils] : ScreenShot: D:\ExamProject\target\screenshots\hotlineTests\GetIPhone\findIPhone[1].jpg
+2017-06-10 14:26:46   INFO [libs.Utils] : ScreenShot: D:\ExamProject\target\screenshots\hotlineTests\GetIPhone\findIPhone[1].jpg
+2017-06-10 14:26:50   INFO [hotlineTests.GetIPhone] : PHANTOMJS will be started
+2017-06-10 14:28:20   INFO [hotlineTests.GetIPhone] : Chrome will be started 
+2017-06-10 14:28:24   INFO [hotlineTests.GetIPhone] : Chrome is started
+2017-06-10 14:28:24  ERROR [pages.BasePage] : Can't execute test data from excel file
+2017-06-10 14:28:25   INFO [libs.Utils] : ScreenShot: D:\ExamProject\target\screenshots\hotlineTests\GetIPhone\findIPhone[0].jpg
+2017-06-10 14:28:25   INFO [libs.Utils] : ScreenShot: D:\ExamProject\target\screenshots\hotlineTests\GetIPhone\findIPhone[0].jpg
+2017-06-10 14:28:26   INFO [hotlineTests.GetIPhone] : FireFox will be started 
+2017-06-10 14:28:30   INFO [hotlineTests.GetIPhone] : FireFox is started
+2017-06-10 14:28:30  ERROR [pages.BasePage] : Can't execute test data from excel file
+2017-06-10 14:28:30   INFO [libs.Utils] : ScreenShot: D:\ExamProject\target\screenshots\hotlineTests\GetIPhone\findIPhone[1].jpg
+2017-06-10 14:28:30   INFO [libs.Utils] : ScreenShot: D:\ExamProject\target\screenshots\hotlineTests\GetIPhone\findIPhone[1].jpg
+2017-06-10 14:28:32   INFO [hotlineTests.GetIPhone] : PHANTOMJS will be started
+2017-06-10 14:30:08   INFO [hotlineTests.GetIPhone] : Chrome will be started 
+2017-06-10 14:30:11   INFO [hotlineTests.GetIPhone] : Chrome is started
+2017-06-10 14:30:12  ERROR [pages.BasePage] : Can't execute test data from excel file
+2017-06-10 14:30:12   INFO [libs.Utils] : ScreenShot: D:\ExamProject\target\screenshots\hotlineTests\GetIPhone\findIPhone[0].jpg
+2017-06-10 14:30:13   INFO [libs.Utils] : ScreenShot: D:\ExamProject\target\screenshots\hotlineTests\GetIPhone\findIPhone[0].jpg
+2017-06-10 14:31:34   INFO [hotlineTests.GetIPhone] : Chrome will be started 
+2017-06-10 14:31:37   INFO [hotlineTests.GetIPhone] : Chrome is started
+2017-06-10 14:31:38   INFO [pages.BasePage] : Test data executed from excel file.
+2017-06-10 14:31:40   INFO [hotlineTests.GetIPhone] : Page http://hotline.ua/ opened
+2017-06-10 14:31:40   INFO [libs.ActionsWithElements] : Text iPhone sent to [[ChromeDriver: chrome on XP (42a1c7e9c319f079999b96ae88f3554d)] -> xpath: .//input[@id='searchbox']]
+2017-06-10 14:31:50   INFO [libs.ActionsWithElements] : Element was clicked: Proxy element for: DefaultElementLocator 'By.xpath: .//div[@id='live-search']//li[./a[contains(.,'Apple')] and ./a[contains(.,'7')] and .//strong[contains(.,'iPhone')]]'
+2017-06-10 14:32:05  ERROR [libs.ActionsWithElements] : Element can't be clicked: Proxy element for: DefaultElementLocator 'By.xpath: .//li[@data-id='prices']//a'
+2017-06-10 14:32:11   INFO [libs.Utils] : ScreenShot: D:\ExamProject\target\screenshots\hotlineTests\GetIPhone\findIPhone[0].jpg
+2017-06-10 14:32:11   INFO [libs.Utils] : ScreenShot: D:\ExamProject\target\screenshots\hotlineTests\GetIPhone\findIPhone[0].jpg

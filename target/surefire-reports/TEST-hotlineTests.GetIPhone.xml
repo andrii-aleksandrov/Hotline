@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="hotlineTests.GetIPhone" time="185.867" tests="3" errors="0" skipped="0" failures="1">
+  <properties>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="JOB_NAME" value="Hotline iPhone Test"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="windows_tracing_logfile" value="C:\BVTBin\Tests\installpackage\csilogfile.log"/>
+    <property name="NUMBER_OF_PROCESSORS" value="4"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="JENKINS_HOME" value="C:\Users\andrey.aleksandrov\.jenkins"/>
+    <property name="HUDSON_SERVER_COOKIE" value="c9fc18f60f97e889"/>
+    <property name="POM_ARTIFACTID" value="ExamProject"/>
+    <property name="os.name" value="Windows 7"/>
+    <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_121\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_121\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_121\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_121\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_121\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_121\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_121\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_121\jre\classes"/>
+    <property name="EXECUTOR_NUMBER" value="0"/>
+    <property name="sun.desktop" value="windows"/>
+    <property name="PATHEXT" value=".COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="POM_DISPLAYNAME" value="ExamProject"/>
+    <property name="NODE_LABELS" value="master"/>
+    <property name="TEMP" value="C:\UsrTemp"/>
+    <property name="java.runtime.version" value="1.8.0_121-b13"/>
+    <property name="user.name" value="andrey.aleksandrov"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="CommonProgramW6432" value="C:\Program Files\Common Files"/>
+    <property name="ProgramFiles" value="C:\Program Files"/>
+    <property name="EmpirumServer" value="kbpas01.europe.mypuma.net"/>
+    <property name="PROMPT" value="$P$G"/>
+    <property name="=A:" value="A:\"/>
+    <property name="user.language" value="ru"/>
+    <property name="JOB_BASE_NAME" value="Hotline iPhone Test"/>
+    <property name="RUN_CHANGES_DISPLAY_URL" value="http://unconfigured-jenkins-location/job/Hotline%20iPhone%20Test/6/display/redirect?page=changes"/>
+    <property name="BUILD_DISPLAY_NAME" value="#6"/>
+    <property name="OneDrive" value="D:\Andrey Aleksandrov\OneDrive - PUMA"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_121\jre\bin"/>
+    <property name="LOCALAPPDATA" value="C:\Users\andrey.aleksandrov\AppData\Local"/>
+    <property name="java.version" value="1.8.0_121"/>
+    <property name="PROCESSOR_LEVEL" value="6"/>
+    <property name="user.timezone" value="Europe/Helsinki"/>
+    <property name="USERNAME" value="andrey.aleksandrov"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="NODE_NAME" value="master"/>
+    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_121\jre\lib\endorsed"/>
+    <property name="BUILD_ID" value="6"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1251"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="file.separator" value="\"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="HOMEDRIVE" value="C:"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="=::" value="::\"/>
+    <property name="org.slf4j.simpleLogger.defaultLogLevel" value="info"/>
+    <property name="user.country" value="RU"/>
+    <property name="ALLUSERSPROFILE" value="C:\ProgramData"/>
+    <property name="VS140COMNTOOLS" value="C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\Tools\"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_121\jre"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="os.version" value="6.1"/>
+    <property name="RUN_DISPLAY_URL" value="http://unconfigured-jenkins-location/job/Hotline%20iPhone%20Test/6/display/redirect"/>
+    <property name="POM_VERSION" value="1.0-SNAPSHOT"/>
+    <property name="TMP" value="C:\UsrTemp"/>
+    <property name="path.separator" value=";"/>
+    <property name="java.vm.version" value="25.121-b13"/>
+    <property name="user.variant" value=""/>
+    <property name="JOB_DISPLAY_URL" value="http://unconfigured-jenkins-location/job/Hotline%20iPhone%20Test/display/redirect"/>
+    <property name="CommonProgramFiles(x86)" value="C:\Program Files (x86)\Common Files"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="FP_NO_HOST_CHECK" value="NO"/>
+    <property name="JAVA_HOME" value="C:\Program Files\Java\jdk1.8.0_121"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="CommonProgramFiles" value="C:\Program Files\Common Files"/>
+    <property name="ComSpec" value="C:\Windows\system32\cmd.exe"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="HOMEPATH" value="\Users\andrey.aleksandrov"/>
+    <property name="USERDNSDOMAIN" value="EUROPE.MYPUMA.NET"/>
+    <property name="POM_PACKAGING" value="jar"/>
+    <property name="user.script" value=""/>
+    <property name="COMPUTERNAME" value="KBP5017"/>
+    <property name="POM_GROUPID" value="ExamProject"/>
+    <property name="VBOX_MSI_INSTALL_PATH" value="C:\Program Files\Oracle\VirtualBox\"/>
+    <property name="user.home" value="C:\Users\andrey.aleksandrov"/>
+    <property name="PUBLIC" value="C:\Users\Public"/>
+    <property name="BUILD_TAG" value="jenkins-Hotline iPhone Test-6"/>
+    <property name="JENKINS_SERVER_COOKIE" value="c9fc18f60f97e889"/>
+    <property name="ProgramData" value="C:\ProgramData"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="test" value="GetIPhone"/>
+    <property name="USERPROFILE" value="C:\Users\andrey.aleksandrov"/>
+    <property name="CLASSPATH" value=""/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_121\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Users\andrey.aleksandrov\.jenkins\tools\hudson.tasks.Maven_MavenInstallation\maven/bin;C:\Program Files\Java\jdk1.8.0_121/bin;C:\Program Files\Java\jdk1.8.0_121/bin;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Google\Chrome\Application;C:\Program Files (x86)\ImageMagick-6.7.9-Q8;C:\Program Files\Dell\DW WLAN Card;C:\PROGRAM FILES (X86)\INTEL\ICLS CLIENT\;C:\PROGRAM FILES\INTEL\ICLS CLIENT\;C:\WINDOWS\SYSTEM32;C:\WINDOWS;C:\WINDOWS\SYSTEM32\WBEM;C:\WINDOWS\SYSTEM32\WINDOWSPOWERSHELL\V1.0\;C:\PROGRAM FILES (X86)\NVIDIA CORPORATION\PHYSX\COMMON;C:\PROGRAM FILES\INTEL\INTEL(R) MANAGEMENT ENGINE COMPONENTS\DAL;C:\PROGRAM FILES (X86)\INTEL\INTEL(R) MANAGEMENT ENGINE COMPONENTS\DAL;C:\PROGRAM FILES\INTEL\INTEL(R) MANAGEMENT ENGINE COMPONENTS\IPT;C:\PROGRAM FILES (X86)\INTEL\INTEL(R) MANAGEMENT ENGINE COMPONENTS\IPT;C:\Program Files\WIDCOMM\Bluetooth Software\;C:\Program Files\WIDCOMM\Bluetooth Software\syswow64;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\SysWOW64\Empirum;C:\Program Files (x86)\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files\Microsoft SQL Server\110\DTS\Binn\;C:\Program Files;C:\Program Files (x86)\Microsoft SQL Server\Client SDK\ODBC\130\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\130\DTS\Binn\;C:\Program Files\Java\jdk1.8.0_121\bin;C:\Program Files (x86)\Skype\Phone\;D:\Andrey Aleksandrov\JAVA\Selenium;C:\Program Files\Git\cmd;D:\QA\drivers\;C:\Windows\system32;C:\adb;C:\Users\andrey.aleksandrov\AppData\Local\GitHubDesktop\bin;."/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="APPDATA" value="C:\Users\andrey.aleksandrov\AppData\Roaming"/>
+    <property name="JMETER_HOME" value="D:\Andrey Aleksandrov\QA\apache-jmeter-3.1\"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="maven.home" value="C:\Users\andrey.aleksandrov\.jenkins\tools\hudson.tasks.Maven_MavenInstallation\maven"/>
+    <property name="java.class.path" value="C:\Users\andrey.aleksandrov\.jenkins\plugins\maven-plugin\WEB-INF\lib\maven33-agent-1.11.jar;C:\Users\andrey.aleksandrov\.jenkins\tools\hudson.tasks.Maven_MavenInstallation\maven\boot\plexus-classworlds-2.5.2.jar;C:\Users\andrey.aleksandrov\.jenkins\tools\hudson.tasks.Maven_MavenInstallation\maven/conf/logging"/>
+    <property name="sun.java.command" value="jenkins.maven3.agent.Maven33Main C:\Users\andrey.aleksandrov\.jenkins\tools\hudson.tasks.Maven_MavenInstallation\maven C:\Users\andrey.aleksandrov\.jenkins\war\WEB-INF\lib\remoting-3.7.jar C:\Users\andrey.aleksandrov\.jenkins\plugins\maven-plugin\WEB-INF\lib\maven33-interceptor-1.11.jar C:\Users\andrey.aleksandrov\.jenkins\plugins\maven-plugin\WEB-INF\lib\maven3-interceptor-commons-1.11.jar 59759"/>
+    <property name="Path" value="C:\Program Files\Java\jdk1.8.0_121/bin;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Google\Chrome\Application;C:\Program Files (x86)\ImageMagick-6.7.9-Q8;C:\Program Files\Dell\DW WLAN Card;C:\PROGRAM FILES (X86)\INTEL\ICLS CLIENT\;C:\PROGRAM FILES\INTEL\ICLS CLIENT\;C:\WINDOWS\SYSTEM32;C:\WINDOWS;C:\WINDOWS\SYSTEM32\WBEM;C:\WINDOWS\SYSTEM32\WINDOWSPOWERSHELL\V1.0\;C:\PROGRAM FILES (X86)\NVIDIA CORPORATION\PHYSX\COMMON;C:\PROGRAM FILES\INTEL\INTEL(R) MANAGEMENT ENGINE COMPONENTS\DAL;C:\PROGRAM FILES (X86)\INTEL\INTEL(R) MANAGEMENT ENGINE COMPONENTS\DAL;C:\PROGRAM FILES\INTEL\INTEL(R) MANAGEMENT ENGINE COMPONENTS\IPT;C:\PROGRAM FILES (X86)\INTEL\INTEL(R) MANAGEMENT ENGINE COMPONENTS\IPT;C:\Program Files\WIDCOMM\Bluetooth Software\;C:\Program Files\WIDCOMM\Bluetooth Software\syswow64;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\SysWOW64\Empirum;C:\Program Files (x86)\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files\Microsoft SQL Server\110\DTS\Binn\;C:\Program Files;C:\Program Files (x86)\Microsoft SQL Server\Client SDK\ODBC\130\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\130\DTS\Binn\;C:\Program Files\Java\jdk1.8.0_121\bin;C:\Program Files (x86)\Skype\Phone\;D:\Andrey Aleksandrov\JAVA\Selenium;C:\Program Files\Git\cmd;D:\QA\drivers\;C:\Windows\system32;C:\adb;C:\Users\andrey.aleksandrov\AppData\Local\GitHubDesktop\bin"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="PROCESSOR_ARCHITECTURE" value="AMD64"/>
+    <property name="MASTERSQL" value="10.101.38.1"/>
+    <property name="PATH+JDK" value="C:\Program Files\Java\jdk1.8.0_121/bin"/>
+    <property name="PROCESSOR_IDENTIFIER" value="Intel64 Family 6 Model 61 Stepping 4, GenuineIntel"/>
+    <property name="SESSIONNAME" value="Console"/>
+    <property name="EmpSrvLong" value="kbpas01.europe.mypuma.net"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.os.patch.level" value="Service Pack 1"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="M2_HOME" value="C:\Users\andrey.aleksandrov\.jenkins\tools\hudson.tasks.Maven_MavenInstallation\maven"/>
+    <property name="=D:" value="D:\ExamProject"/>
+    <property name="java.io.tmpdir" value="C:\UsrTemp\"/>
+    <property name="OS" value="Windows_NT"/>
+    <property name="HUDSON_HOME" value="C:\Users\andrey.aleksandrov\.jenkins"/>
+    <property name="PATH+MAVEN" value="C:\Users\andrey.aleksandrov\.jenkins\tools\hudson.tasks.Maven_MavenInstallation\maven/bin"/>
+    <property name="ProgramFiles(x86)" value="C:\Program Files (x86)"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="SystemRoot" value="C:\Windows"/>
+    <property name="windows_tracing_flags" value="3"/>
+    <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.8.0_121\jre\lib\ext;C:\Windows\Sun\Java\lib\ext"/>
+    <property name="user.dir" value="D:\ExamProject"/>
+    <property name="LOGONSERVER" value="\\HERDC11"/>
+    <property name="USERDOMAIN" value="EUROPE"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="MAVEN_HOME" value="C:\Users\andrey.aleksandrov\.jenkins\tools\hudson.tasks.Maven_MavenInstallation\maven"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="BUILD_NUMBER" value="6"/>
+    <property name="PROCESSOR_REVISION" value="3d04"/>
+    <property name="maven.test.failure.ignore" value="true"/>
+    <property name="JMETER_BIN" value="D:\Andrey Aleksandrov\QA\apache-jmeter-3.1\bin\"/>
+    <property name="ProgramW6432" value="C:\Program Files"/>
+    <property name="windir" value="C:\Windows"/>
+    <property name="=C:" value="C:\Users\andrey.aleksandrov"/>
+    <property name="file.encoding" value="Cp1251"/>
+    <property name="SystemDrive" value="C:"/>
+    <property name="maven3.interceptor" value="C:\Users\andrey.aleksandrov\.jenkins\plugins\maven-plugin\WEB-INF\lib\maven33-interceptor-1.11.jar"/>
+    <property name="WORKSPACE" value="C:\Users\andrey.aleksandrov\.jenkins\workspace\Hotline iPhone Test"/>
+    <property name="maven3.interceptor.common" value="C:\Users\andrey.aleksandrov\.jenkins\plugins\maven-plugin\WEB-INF\lib\maven3-interceptor-commons-1.11.jar"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="PSModulePath" value="C:\Windows\system32\WindowsPowerShell\v1.0\Modules\;C:\Program Files (x86)\Microsoft SQL Server\110\Tools\PowerShell\Modules\;C:\Program Files (x86)\Microsoft SQL Server\130\Tools\PowerShell\Modules\"/>
+  </properties>
+  <testcase name="findIPhone[0]" classname="hotlineTests.GetIPhone" time="61.082"/>
+  <testcase name="findIPhone[1]" classname="hotlineTests.GetIPhone" time="60.129">
+    <failure message="Result is true expected:&lt;http://[ispace.com.ua/catalog/282030/282031/72510]&gt; but was:&lt;http://[hotline.ua/mobile-mobilnye-telefony-i-smartfony/apple-iphone-7-32gb-black/prices/]&gt;" type="org.junit.ComparisonFailure"><![CDATA[org.junit.ComparisonFailure: Result is true expected:<http://[ispace.com.ua/catalog/282030/282031/72510]> but was:<http://[hotline.ua/mobile-mobilnye-telefony-i-smartfony/apple-iphone-7-32gb-black/prices/]>
+	at hotlineTests.GetIPhone.findIPhone(GetIPhone.java:103)
+]]></failure>
+    <system-out><![CDATA[2017-22-09 10:12:50   INFO [           GetIPhone:99  ] : FireFox will be started 
+2017-22-09 10:12:54   INFO [           GetIPhone:105 ] : FireFox is started
+2017-22-09 10:12:54   INFO [            BasePage:49  ] : Test data executed from excel file.
+2017-22-09 10:12:59   INFO [           GetIPhone:178 ] : Page http://hotline.ua/ opened
+2017-22-09 10:13:00   INFO [ ActionsWithElements:53  ] : Text iPhone sent to [[FirefoxDriver: firefox on XP (d1576fd3-f378-4328-961a-0c44df531405)] -> xpath: .//input[@id='searchbox']]
+2017-22-09 10:13:17   INFO [ ActionsWithElements:42  ] : Element was clicked: Proxy element for: DefaultElementLocator 'By.xpath: .//div[@id='live-search']//li[./a[contains(.,'Apple')] and ./a[contains(.,'7')] and .//strong[contains(.,'iPhone')]]'
+2017-22-09 10:13:18   INFO [ ActionsWithElements:42  ] : Element was clicked: [[FirefoxDriver: firefox on XP (d1576fd3-f378-4328-961a-0c44df531405)] -> xpath: .//li[@data-id='prices']//a]
+2017-22-09 10:13:48   INFO [               Utils:30  ] : ScreenShot: D:\ExamProject\target\screenshots\hotlineTests\GetIPhone\findIPhone[1].jpg
+2017-22-09 10:13:48   INFO [               Utils:30  ] : ScreenShot: D:\ExamProject\target\screenshots\hotlineTests\GetIPhone\findIPhone[1].jpg
+]]></system-out>
+    <system-err><![CDATA[1506064370811	geckodriver	INFO	geckodriver 0.18.0
+1506064370824	geckodriver	INFO	Listening on 127.0.0.1:29734
+1506064371147	geckodriver::marionette	INFO	Starting browser C:\Program Files (x86)\Mozilla Firefox\firefox.exe with args ["-marionette"]
+1506064371822	addons.xpi	WARN	Error parsing extensions state: [Exception... "Component returned failure code: 0x80520012 (NS_ERROR_FILE_NOT_FOUND) [amIAddonManagerStartup.readStartupData]"  nsresult: "0x80520012 (NS_ERROR_FILE_NOT_FOUND)"  location: "JS frame :: resource://gre/modules/addons/XPIProvider.jsm :: loadExtensionState :: line 1596"  data: no] Stack trace: loadExtensionState()@resource://gre/modules/addons/XPIProvider.jsm:1596 < getInstallState()@resource://gre/modules/addons/XPIProvider.jsm:1631 < checkForChanges()@resource://gre/modules/addons/XPIProvider.jsm:3152 < startup()@resource://gre/modules/addons/XPIProvider.jsm:2246 < callProvider()@resource://gre/modules/AddonManager.jsm:271 < _startProvider()@resource://gre/modules/AddonManager.jsm:741 < startup()@resource://gre/modules/AddonManager.jsm:908 < startup()@resource://gre/modules/AddonManager.jsm:3122 < observe()@jar:file:///C:/Program%20Files%20(x86)/Mozilla%20Firefox/omni.ja!/components/addonManager.js:65
+1506064372355	Marionette	INFO	Enabled via --marionette
+[GPU 3940] WARNING: pipe error: 109: file c:/builds/moz2_slave/m-rel-w32-00000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Parent 5948] WARNING: pipe error: 109: file c:/builds/moz2_slave/m-rel-w32-00000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 6512] WARNING: pipe error: 109: file c:/builds/moz2_slave/m-rel-w32-00000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 6512] WARNING: pipe error: 109: file c:/builds/moz2_slave/m-rel-w32-00000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+1506064374242	Marionette	INFO	Listening on port 60613
+1506064374345	Marionette	WARN	TLS certificate errors will be ignored for this session
+1506064374400	Marionette	INFO	Listening on port 60613
+1506064374450	Marionette	DEBUG	loaded listener.js
+сен 22, 2017 10:12:54 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+1506064374675	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1506064375267	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1506064375268	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+JavaScript warning: http://hotline.ua/js/prod/bin/c43c9af490b9dcf83fc8f1e08b080666.js, line 753: unreachable code after return statement
+JavaScript warning: http://hotline.ua/js/prod/bin/c43c9af490b9dcf83fc8f1e08b080666.js, line 753: unreachable code after return statement
+1506064377266	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://hotline.ua/"
+1506064378659	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://content.adriver.ru/banners/0002186/0002186173/0/l6.html?616541&4&6&0&6402523&0&0&100&217.20.170.58&merle&1"
+1506064378664	Marionette	DEBUG	Received DOM event "pageshow" for "http://content.adriver.ru/banners/0002186/0002186173/0/l6.html?616541&4&6&0&6402523&0&0&100&217.20.170.58&merle&1"
+1506064378664	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://content.adriver.ru/banners/0002186/0002186173/0/l6.html?0&4&6&0&7197227&0&0&100&217.20.170.58&merle&1"
+1506064378667	Marionette	DEBUG	Received DOM event "pageshow" for "http://content.adriver.ru/banners/0002186/0002186173/0/l6.html?0&4&6&0&7197227&0&0&100&217.20.170.58&merle&1"
+JavaScript error: http://edp2.adriver.ru/images/0005068/0005068447/0/script.js?vadriver_banner_4, line 99: ReferenceError: ar_content_width is not defined
+1506064379015	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://ams.creativecdn.com/tags?id=pr_hUwRADDpO0xRQAwgvaWj_home&tc=1"
+1506064379284	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://accounts.google.com/o/oauth2/postmessageRelay?parent=http%3A%2F%2Fhotline.ua&jsh=m%3B%2F_%2Fscs%2Fapps-static%2F_%2Fjs%2Fk%3Doz.gapi.uk.d-xOAQAiItY.O%2Fm%3D__features__%2Fam%3DAQ%2Frt%3Dj%2Fd%3D1%2Frs%3DAGLTcCMqs798au4qdGjVBgBnrGHISmY9TQ#rpctoken=621614275&forcesecure=1"
+1506064379379	Marionette	DEBUG	Received DOM event "pageshow" for "https://accounts.google.com/o/oauth2/postmessageRelay?parent=http%3A%2F%2Fhotline.ua&jsh=m%3B%2F_%2Fscs%2Fapps-static%2F_%2Fjs%2Fk%3Doz.gapi.uk.d-xOAQAiItY.O%2Fm%3D__features__%2Fam%3DAQ%2Frt%3Dj%2Fd%3D1%2Frs%3DAGLTcCMqs798au4qdGjVBgBnrGHISmY9TQ#rpctoken=621614275&forcesecure=1"
+1506064379476	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://edp2.adriver.ru/images/0005068/0005068447/0/index.html?html_params=xpid%3DDZ1mrCDKIggGSHz295au6OuQ4LLEHzY7rveUxMAylcop_efanAcNZLCt5Kt2DG8VCrWmJLrPI2A%26target%3D_blank%26bid%3D5068447%26sid%3D82345%26width%3D100%2525%26height%3D90px%26rnd%3D6402523%26pz%3D4%26ad%3D616541%26bt%3D52%26bn%3D4%26ar_sliceid%3D1885732%26ntype%3D0%26nid%3D0%26url%3D//ad.adriver.ru/cgi-bin/click.cgi%253Fsid%253D82345%2526ad%253D616541%2526bid%253D5068447%2526bt%253D52%2526bn%253D4%2526pz%253D4%2526xpid%253DDZ1mrCDKIggGSHz295au6OuQ4LLEHzY7rveUxMAylcop_efanAcNZLCt5Kt2DG8VCrWmJLrPI2A%2526ref%253Dhttp%253A%25252f%25252fhotline.ua%25252f%2526custom%253D%2526rleurl%253D%26CompPath%3Dhttp%253A//edp2.adriver.ru/images/0005068/0005068447/0/%26ar_pass%3D"
+1506064379488	Marionette	DEBUG	Received DOM event "pageshow" for "http://edp2.adriver.ru/images/0005068/0005068447/0/index.html?html_params=xpid%3DDZ1mrCDKIggGSHz295au6OuQ4LLEHzY7rveUxMAylcop_efanAcNZLCt5Kt2DG8VCrWmJLrPI2A%26target%3D_blank%26bid%3D5068447%26sid%3D82345%26width%3D100%2525%26height%3D90px%26rnd%3D6402523%26pz%3D4%26ad%3D616541%26bt%3D52%26bn%3D4%26ar_sliceid%3D1885732%26ntype%3D0%26nid%3D0%26url%3D//ad.adriver.ru/cgi-bin/click.cgi%253Fsid%253D82345%2526ad%253D616541%2526bid%253D5068447%2526bt%253D52%2526bn%253D4%2526pz%253D4%2526xpid%253DDZ1mrCDKIggGSHz295au6OuQ4LLEHzY7rveUxMAylcop_efanAcNZLCt5Kt2DG8VCrWmJLrPI2A%2526ref%253Dhttp%253A%25252f%25252fhotline.ua%25252f%2526custom%253D%2526rleurl%253D%26CompPath%3Dhttp%253A//edp2.adriver.ru/images/0005068/0005068447/0/%26ar_pass%3D"
+1506064379519	Marionette	DEBUG	Received DOM event "pageshow" for "https://ams.creativecdn.com/tags?id=pr_hUwRADDpO0xRQAwgvaWj_home&tc=1"
+1506064379791	Marionette	DEBUG	Received DOM event "pageshow" for "http://hotline.ua/"
+1506064381317	Marionette	DEBUG	Received DOM event "beforeunload" for "http://hotline.ua/"
+1506064382206	Marionette	DEBUG	Received DOM event "pagehide" for "http://hotline.ua/"
+1506064382211	Marionette	DEBUG	Received DOM event "unload" for "http://hotline.ua/"
+1506064382540	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "4294967301"
+1506064382540	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "4294967313"
+1506064382541	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "4294967302"
+1506064382541	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "4294967303"
+1506064382541	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "4294967304"
+1506064382543	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "4294967310"
+1506064382620	Marionette	DEBUG	Received DOM event "pageshow" for "http://hotline.ua/mobile-mobilnye-telefony-i-smartfony/apple-iphone-7-32gb-black/"
+1506064382715	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://creativecdn.com/tags?id=pr_hUwRADDpO0xRQAwgvaWj_offer_8168075"
+JavaScript warning: http://hotline.ua/js/prod/bin/9c9ad7dd2ceba17bd3fe64ebd1efce6b.js, line 335: unreachable code after return statement
+1506064384001	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://hotline.ua/mobile-mobilnye-telefony-i-smartfony/apple-iphone-7-32gb-black/"
+1506064384125	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "4294967320"
+1506064384127	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "4294967318"
+1506064384130	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "4294967321"
+1506064384260	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://hotline.ua/mobile-mobilnye-telefony-i-smartfony/apple-iphone-7-32gb-black/"
+1506064384263	Marionette	DEBUG	Received DOM event "pageshow" for "http://hotline.ua/mobile-mobilnye-telefony-i-smartfony/apple-iphone-7-32gb-black/"
+1506064384264	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://hotline.ua/mobile-mobilnye-telefony-i-smartfony/apple-iphone-7-32gb-black/"
+1506064384267	Marionette	DEBUG	Received DOM event "pageshow" for "http://hotline.ua/mobile-mobilnye-telefony-i-smartfony/apple-iphone-7-32gb-black/"
+1506064385878	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://hotline.ua/mobile-mobilnye-telefony-i-smartfony/apple-iphone-7-32gb-black/"
+1506064385888	Marionette	DEBUG	Received DOM event "pageshow" for "http://hotline.ua/mobile-mobilnye-telefony-i-smartfony/apple-iphone-7-32gb-black/"
+1506064385965	Marionette	DEBUG	Received DOM event "pageshow" for "http://creativecdn.com/tags?id=pr_hUwRADDpO0xRQAwgvaWj_offer_8168075"
+1506064385992	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://content.adriver.ru/banners/0002186/0002186173/0/l6.html?0&0&2&0&5390491&0&0&100&217.20.170.58&merle&1"
+1506064385995	Marionette	DEBUG	Received DOM event "pageshow" for "http://content.adriver.ru/banners/0002186/0002186173/0/l6.html?0&0&2&0&5390491&0&0&100&217.20.170.58&merle&1"
+1506064385997	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://content.adriver.ru/banners/0002186/0002186173/0/l6.html?0&0&2&0&51723&0&0&100&217.20.170.58&merle&1"
+1506064386015	Marionette	DEBUG	Received DOM event "pageshow" for "http://content.adriver.ru/banners/0002186/0002186173/0/l6.html?0&0&2&0&51723&0&0&100&217.20.170.58&merle&1"
+1506064386015	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://content.adriver.ru/banners/0002186/0002186173/0/l6.html?0&0&2&0&1446272&0&0&100&217.20.170.58&merle&1"
+1506064386018	Marionette	DEBUG	Received DOM event "pageshow" for "http://content.adriver.ru/banners/0002186/0002186173/0/l6.html?0&0&2&0&1446272&0&0&100&217.20.170.58&merle&1"
+1506064386019	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://googleads.g.doubleclick.net/pagead/html/r20170920/r20170110/zrt_lookup.html#"
+1506064386023	Marionette	DEBUG	Received DOM event "pageshow" for "https://googleads.g.doubleclick.net/pagead/html/r20170920/r20170110/zrt_lookup.html#"
+1506064386024	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "4294967329"
+1506064386315	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://hotline.ua/mobile-mobilnye-telefony-i-smartfony/apple-iphone-7-32gb-black/"
+1506064386347	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://accounts.google.com/o/oauth2/postmessageRelay?parent=http%3A%2F%2Fhotline.ua&jsh=m%3B%2F_%2Fscs%2Fapps-static%2F_%2Fjs%2Fk%3Doz.gapi.uk.d-xOAQAiItY.O%2Fm%3D__features__%2Fam%3DAQ%2Frt%3Dj%2Fd%3D1%2Frs%3DAGLTcCMqs798au4qdGjVBgBnrGHISmY9TQ#rpctoken=745637107&forcesecure=1"
+1506064386435	Marionette	DEBUG	Received DOM event "pageshow" for "https://accounts.google.com/o/oauth2/postmessageRelay?parent=http%3A%2F%2Fhotline.ua&jsh=m%3B%2F_%2Fscs%2Fapps-static%2F_%2Fjs%2Fk%3Doz.gapi.uk.d-xOAQAiItY.O%2Fm%3D__features__%2Fam%3DAQ%2Frt%3Dj%2Fd%3D1%2Frs%3DAGLTcCMqs798au4qdGjVBgBnrGHISmY9TQ#rpctoken=745637107&forcesecure=1"
+1506064386436	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://hotline.ua/mobile-mobilnye-telefony-i-smartfony/apple-iphone-7-32gb-black/"
+1506064386456	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://hotline.ua/mobile-mobilnye-telefony-i-smartfony/apple-iphone-7-32gb-black/"
+1506064386458	Marionette	DEBUG	Received DOM event "pageshow" for "http://hotline.ua/mobile-mobilnye-telefony-i-smartfony/apple-iphone-7-32gb-black/"
+1506064387101	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://googleads.g.doubleclick.net/pagead/ads?client=ca-pub-4895093816493749&output=html&h=90&slotname=9061854485&adk=2424098372&adf=3915692403&w=728&lmt=1506064386&flash=0&url=http%3A%2F%2Fhotline.ua%2Fmobile-mobilnye-telefony-i-smartfony%2Fapple-iphone-7-32gb-black%2F&wgl=1&dt=1506064382691&bpp=12&bdt=485&fdt=3633&idt=3682&shv=r20170920&cbv=r20170110&saldr=sa&prev_slotnames=9400428605&correlator=7375018840340&frm=20&ga_vid=136505740.1506064378&ga_sid=1506064386&ga_hid=606374083&ga_fc=0&pv=1&icsg=2&nhd=1&dssz=2&mdo=0&mso=0&u_tz=180&u_his=2&u_java=0&u_h=1080&u_w=1920&u_ah=1028&u_aw=1920&u_cd=24&u_nplug=0&u_nmime=0&adx=588&ady=3431&biw=1904&bih=959&abxe=1&eid=10593695%2C21060078&oid=3&ref=http%3A%2F%2Fhotline.ua%2F&rx=0&eae=0&fc=528&brdim=%2C%2C-4%2C-4%2C1920%2C0%2C1928%2C1036%2C1920%2C959&vis=1&rsz=%7Co%7CeEbr%7C&abl=NS&ppjl=f&pfx=0&fu=16&bc=1&ifi=2&xpc=KBRmCA6Txo&p=http%3A//hotline.ua&dtd=3716"
+1506064387119	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://googleads.g.doubleclick.net/pagead/drt/s?v=r20120211"
+1506064387123	Marionette	DEBUG	Received DOM event "pageshow" for "https://googleads.g.doubleclick.net/pagead/drt/s?v=r20120211"
+1506064387242	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://googleads.g.doubleclick.net/pagead/ads?client=ca-pub-4895093816493749&output=html&h=600&slotname=9400428605&adk=211910472&adf=2224437454&w=300&lmt=1506064386&flash=0&url=http%3A%2F%2Fhotline.ua%2Fmobile-mobilnye-telefony-i-smartfony%2Fapple-iphone-7-32gb-black%2F&wgl=1&dt=1506064382604&bpp=13&bdt=399&fdt=3236&idt=3598&shv=r20170920&cbv=r20170110&saldr=sa&correlator=7375018840340&frm=20&ga_vid=136505740.1506064378&ga_sid=1506064386&ga_hid=606374083&ga_fc=0&pv=2&icsg=2&nhd=1&dssz=2&mdo=0&mso=0&u_tz=180&u_his=2&u_java=0&u_h=1080&u_w=1920&u_ah=1028&u_aw=1920&u_cd=24&u_nplug=0&u_nmime=0&adx=1282&ady=636&biw=1904&bih=959&abxe=1&eid=10593695%2C21060078&oid=3&ref=http%3A%2F%2Fhotline.ua%2F&rr=1&rx=0&eae=0&fc=528&brdim=%2C%2C-4%2C-4%2C1920%2C0%2C1928%2C1036%2C1920%2C959&vis=1&rsz=%7Co%7CeE%7C&abl=NS&ppjl=f&pfx=0&fu=16&bc=1&ifi=1&xpc=6cQQXwUEwj&p=http%3A//hotline.ua&dtd=3637"
+1506064387256	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://pagead2.googlesyndication.com/pagead/s/cookie_push.html#aHR0cHM6Ly9zeW5jLjFyeC5pby91c2Vyc3luYzIvcm1wc3NwP3N1Yj1nb29nbGUmcmVkaXI9aHR0cHMlM0ElMkYlMkZjbS5nLmRvdWJsZWNsaWNrLm5ldCUyRnBpeGVsJTNGZ29vZ2xlX25pZCUzRHIxJTI2Z29vZ2xlX3B1c2glM0QlNUJSWF9TUEQlNUQlMjZnb29nbGVfaG0lM0QlNUJSWF9VVUlEX0I2NF9CSU4lNUQmZ29vZ2xlX2dpZD1DQUVTRUdBNmIwT2hISm5peUlzeUc0TXd6VUkmZ29vZ2xlX2N2ZXI9MSZnb29nbGVfcHVzaD1BSE5GMTNJTWp3ellaRXNiQzdna3JleTh6cHhxTUFhMjJqbW51YnR0bFN3,aHR0cHM6Ly9jbS5nLmRvdWJsZWNsaWNrLm5ldC9waXhlbC9hdHRyP2Q9QUhORjEzSS0zV0VDamRaWXJkZkVUM3BrdXhQM2owR0RYX3NQ"
+1506064387281	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://pagead2.googlesyndication.com/pagead/s/cookie_push.html#aHR0cHM6Ly9zLm9wZW5kc3AuY29tL21hbi94Y2hpbi8_cGM9YWR4Jmdvb2dsZV9naWQ9Q0FFU0VLWW81ZXNZZUJMME5ST3JaSW80NWcwJmdvb2dsZV9jdmVyPTEmZ29vZ2xlX3B1c2g9QUhORjEzSTN1X1B4clA1WWhoRWN1M05QbGxYX1ozbkt4MFpvS2o3SnQ4U3E=,aHR0cHM6Ly9jbS5nLmRvdWJsZWNsaWNrLm5ldC9waXhlbC9hdHRyP2Q9QUhORjEzSTlvTGQyRExrdW9IMTQ2YkVnRkNnQ0NiakhVV2Fn"
+1506064387475	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://googleads.g.doubleclick.net/pagead/drt/si"
+1506064387482	Marionette	DEBUG	Received DOM event "pageshow" for "https://googleads.g.doubleclick.net/pagead/drt/si"
+1506064388501	Marionette	DEBUG	Received DOM event "pageshow" for "https://pagead2.googlesyndication.com/pagead/s/cookie_push.html#aHR0cHM6Ly9zeW5jLjFyeC5pby91c2Vyc3luYzIvcm1wc3NwP3N1Yj1nb29nbGUmcmVkaXI9aHR0cHMlM0ElMkYlMkZjbS5nLmRvdWJsZWNsaWNrLm5ldCUyRnBpeGVsJTNGZ29vZ2xlX25pZCUzRHIxJTI2Z29vZ2xlX3B1c2glM0QlNUJSWF9TUEQlNUQlMjZnb29nbGVfaG0lM0QlNUJSWF9VVUlEX0I2NF9CSU4lNUQmZ29vZ2xlX2dpZD1DQUVTRUdBNmIwT2hISm5peUlzeUc0TXd6VUkmZ29vZ2xlX2N2ZXI9MSZnb29nbGVfcHVzaD1BSE5GMTNJTWp3ellaRXNiQzdna3JleTh6cHhxTUFhMjJqbW51YnR0bFN3,aHR0cHM6Ly9jbS5nLmRvdWJsZWNsaWNrLm5ldC9waXhlbC9hdHRyP2Q9QUhORjEzSS0zV0VDamRaWXJkZkVUM3BrdXhQM2owR0RYX3NQ"
+1506064388511	Marionette	DEBUG	Received DOM event "pageshow" for "https://googleads.g.doubleclick.net/pagead/ads?client=ca-pub-4895093816493749&output=html&h=90&slotname=9061854485&adk=2424098372&adf=3915692403&w=728&lmt=1506064386&flash=0&url=http%3A%2F%2Fhotline.ua%2Fmobile-mobilnye-telefony-i-smartfony%2Fapple-iphone-7-32gb-black%2F&wgl=1&dt=1506064382691&bpp=12&bdt=485&fdt=3633&idt=3682&shv=r20170920&cbv=r20170110&saldr=sa&prev_slotnames=9400428605&correlator=7375018840340&frm=20&ga_vid=136505740.1506064378&ga_sid=1506064386&ga_hid=606374083&ga_fc=0&pv=1&icsg=2&nhd=1&dssz=2&mdo=0&mso=0&u_tz=180&u_his=2&u_java=0&u_h=1080&u_w=1920&u_ah=1028&u_aw=1920&u_cd=24&u_nplug=0&u_nmime=0&adx=588&ady=3431&biw=1904&bih=959&abxe=1&eid=10593695%2C21060078&oid=3&ref=http%3A%2F%2Fhotline.ua%2F&rx=0&eae=0&fc=528&brdim=%2C%2C-4%2C-4%2C1920%2C0%2C1928%2C1036%2C1920%2C959&vis=1&rsz=%7Co%7CeEbr%7C&abl=NS&ppjl=f&pfx=0&fu=16&bc=1&ifi=2&xpc=KBRmCA6Txo&p=http%3A//hotline.ua&dtd=3716"
+1506064388520	Marionette	DEBUG	Received DOM event "pageshow" for "https://googleads.g.doubleclick.net/pagead/ads?client=ca-pub-4895093816493749&output=html&h=90&slotname=9061854485&adk=2424098372&adf=3915692403&w=728&lmt=1506064386&flash=0&url=http%3A%2F%2Fhotline.ua%2Fmobile-mobilnye-telefony-i-smartfony%2Fapple-iphone-7-32gb-black%2F&wgl=1&dt=1506064382691&bpp=12&bdt=485&fdt=3633&idt=3682&shv=r20170920&cbv=r20170110&saldr=sa&prev_slotnames=9400428605&correlator=7375018840340&frm=20&ga_vid=136505740.1506064378&ga_sid=1506064386&ga_hid=606374083&ga_fc=0&pv=1&icsg=2&nhd=1&dssz=2&mdo=0&mso=0&u_tz=180&u_his=2&u_java=0&u_h=1080&u_w=1920&u_ah=1028&u_aw=1920&u_cd=24&u_nplug=0&u_nmime=0&adx=588&ady=3431&biw=1904&bih=959&abxe=1&eid=10593695%2C21060078&oid=3&ref=http%3A%2F%2Fhotline.ua%2F&rx=0&eae=0&fc=528&brdim=%2C%2C-4%2C-4%2C1920%2C0%2C1928%2C1036%2C1920%2C959&vis=1&rsz=%7Co%7CeEbr%7C&abl=NS&ppjl=f&pfx=0&fu=16&bc=1&ifi=2&xpc=KBRmCA6Txo&p=http%3A//hotline.ua&dtd=3716"
+1506064388521	Marionette	DEBUG	Received DOM event "pageshow" for "http://hotline.ua/mobile-mobilnye-telefony-i-smartfony/apple-iphone-7-32gb-black/"
+1506064388524	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://googleads.g.doubleclick.net/pagead/ads?client=ca-pub-4895093816493749&output=html&h=90&slotname=9061854485&adk=2424098372&adf=3915692403&w=728&lmt=1506064386&flash=0&url=http%3A%2F%2Fhotline.ua%2Fmobile-mobilnye-telefony-i-smartfony%2Fapple-iphone-7-32gb-black%2F&wgl=1&dt=1506064382691&bpp=12&bdt=485&fdt=3633&idt=3682&shv=r20170920&cbv=r20170110&saldr=sa&prev_slotnames=9400428605&correlator=7375018840340&frm=20&ga_vid=136505740.1506064378&ga_sid=1506064386&ga_hid=606374083&ga_fc=0&pv=1&icsg=2&nhd=1&dssz=2&mdo=0&mso=0&u_tz=180&u_his=2&u_java=0&u_h=1080&u_w=1920&u_ah=1028&u_aw=1920&u_cd=24&u_nplug=0&u_nmime=0&adx=588&ady=3431&biw=1904&bih=959&abxe=1&eid=10593695%2C21060078&oid=3&ref=http%3A%2F%2Fhotline.ua%2F&rx=0&eae=0&fc=528&brdim=%2C%2C-4%2C-4%2C1920%2C0%2C1928%2C1036%2C1920%2C959&vis=1&rsz=%7Co%7CeEbr%7C&abl=NS&ppjl=f&pfx=0&fu=16&bc=1&ifi=2&xpc=KBRmCA6Txo&p=http%3A//hotline.ua&dtd=3716"
+1506064388714	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "4294967363"
+1506064388716	Marionette	DEBUG	Received DOM event "pageshow" for "https://googleads.g.doubleclick.net/pagead/ads?client=ca-pub-4895093816493749&output=html&h=90&slotname=9061854485&adk=2424098372&adf=3915692403&w=728&lmt=1506064386&flash=0&url=http%3A%2F%2Fhotline.ua%2Fmobile-mobilnye-telefony-i-smartfony%2Fapple-iphone-7-32gb-black%2F&wgl=1&dt=1506064382691&bpp=12&bdt=485&fdt=3633&idt=3682&shv=r20170920&cbv=r20170110&saldr=sa&prev_slotnames=9400428605&correlator=7375018840340&frm=20&ga_vid=136505740.1506064378&ga_sid=1506064386&ga_hid=606374083&ga_fc=0&pv=1&icsg=2&nhd=1&dssz=2&mdo=0&mso=0&u_tz=180&u_his=2&u_java=0&u_h=1080&u_w=1920&u_ah=1028&u_aw=1920&u_cd=24&u_nplug=0&u_nmime=0&adx=588&ady=3431&biw=1904&bih=959&abxe=1&eid=10593695%2C21060078&oid=3&ref=http%3A%2F%2Fhotline.ua%2F&rx=0&eae=0&fc=528&brdim=%2C%2C-4%2C-4%2C1920%2C0%2C1928%2C1036%2C1920%2C959&vis=1&rsz=%7Co%7CeEbr%7C&abl=NS&ppjl=f&pfx=0&fu=16&bc=1&ifi=2&xpc=KBRmCA6Txo&p=http%3A//hotline.ua&dtd=3716"
+1506064392603	Marionette	DEBUG	Received DOM event "pageshow" for "https://pagead2.googlesyndication.com/pagead/s/cookie_push.html#aHR0cHM6Ly9zLm9wZW5kc3AuY29tL21hbi94Y2hpbi8_cGM9YWR4Jmdvb2dsZV9naWQ9Q0FFU0VLWW81ZXNZZUJMME5ST3JaSW80NWcwJmdvb2dsZV9jdmVyPTEmZ29vZ2xlX3B1c2g9QUhORjEzSTN1X1B4clA1WWhoRWN1M05QbGxYX1ozbkt4MFpvS2o3SnQ4U3E=,aHR0cHM6Ly9jbS5nLmRvdWJsZWNsaWNrLm5ldC9waXhlbC9hdHRyP2Q9QUhORjEzSTlvTGQyRExrdW9IMTQ2YkVnRkNnQ0NiakhVV2Fn"
+1506064392611	Marionette	DEBUG	Received DOM event "pageshow" for "https://googleads.g.doubleclick.net/pagead/ads?client=ca-pub-4895093816493749&output=html&h=600&slotname=9400428605&adk=211910472&adf=2224437454&w=300&lmt=1506064386&flash=0&url=http%3A%2F%2Fhotline.ua%2Fmobile-mobilnye-telefony-i-smartfony%2Fapple-iphone-7-32gb-black%2F&wgl=1&dt=1506064382604&bpp=13&bdt=399&fdt=3236&idt=3598&shv=r20170920&cbv=r20170110&saldr=sa&correlator=7375018840340&frm=20&ga_vid=136505740.1506064378&ga_sid=1506064386&ga_hid=606374083&ga_fc=0&pv=2&icsg=2&nhd=1&dssz=2&mdo=0&mso=0&u_tz=180&u_his=2&u_java=0&u_h=1080&u_w=1920&u_ah=1028&u_aw=1920&u_cd=24&u_nplug=0&u_nmime=0&adx=1282&ady=636&biw=1904&bih=959&abxe=1&eid=10593695%2C21060078&oid=3&ref=http%3A%2F%2Fhotline.ua%2F&rr=1&rx=0&eae=0&fc=528&brdim=%2C%2C-4%2C-4%2C1920%2C0%2C1928%2C1036%2C1920%2C959&vis=1&rsz=%7Co%7CeE%7C&abl=NS&ppjl=f&pfx=0&fu=16&bc=1&ifi=1&xpc=6cQQXwUEwj&p=http%3A//hotline.ua&dtd=3637"
+1506064392619	Marionette	DEBUG	Received DOM event "pageshow" for "https://googleads.g.doubleclick.net/pagead/ads?client=ca-pub-4895093816493749&output=html&h=600&slotname=9400428605&adk=211910472&adf=2224437454&w=300&lmt=1506064386&flash=0&url=http%3A%2F%2Fhotline.ua%2Fmobile-mobilnye-telefony-i-smartfony%2Fapple-iphone-7-32gb-black%2F&wgl=1&dt=1506064382604&bpp=13&bdt=399&fdt=3236&idt=3598&shv=r20170920&cbv=r20170110&saldr=sa&correlator=7375018840340&frm=20&ga_vid=136505740.1506064378&ga_sid=1506064386&ga_hid=606374083&ga_fc=0&pv=2&icsg=2&nhd=1&dssz=2&mdo=0&mso=0&u_tz=180&u_his=2&u_java=0&u_h=1080&u_w=1920&u_ah=1028&u_aw=1920&u_cd=24&u_nplug=0&u_nmime=0&adx=1282&ady=636&biw=1904&bih=959&abxe=1&eid=10593695%2C21060078&oid=3&ref=http%3A%2F%2Fhotline.ua%2F&rr=1&rx=0&eae=0&fc=528&brdim=%2C%2C-4%2C-4%2C1920%2C0%2C1928%2C1036%2C1920%2C959&vis=1&rsz=%7Co%7CeE%7C&abl=NS&ppjl=f&pfx=0&fu=16&bc=1&ifi=1&xpc=6cQQXwUEwj&p=http%3A//hotline.ua&dtd=3637"
+1506064392621	Marionette	DEBUG	Received DOM event "pageshow" for "http://hotline.ua/mobile-mobilnye-telefony-i-smartfony/apple-iphone-7-32gb-black/"
+1506064392630	Marionette	DEBUG	Received DOM event "pageshow" for "http://hotline.ua/mobile-mobilnye-telefony-i-smartfony/apple-iphone-7-32gb-black/"
+JavaScript error: , line 0: uncaught exception: undefined
+1506064398233	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+JavaScript error: http://hotline.ua/js/prod/bin/660062cc15e3d2087f06968b72039b30.js, line 2279: TypeError: r.apply is not a function
+1506064428179	Marionette	INFO	New connections will no longer be accepted
+[Child 4500] WARNING: pipe error: 232: file c:/builds/moz2_slave/m-rel-w32-00000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 513
+сен 22, 2017 10:13:50 AM org.openqa.selenium.os.UnixProcess destroy
+SEVERE: Unable to kill process with PID 2192
+]]></system-err>
+  </testcase>
+  <testcase name="findIPhone[2]" classname="hotlineTests.GetIPhone" time="64.477"/>
+</testsuite>

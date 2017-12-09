@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: hotlineTests.GetIPhone
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 185.867 s <<< FAILURE! - in hotlineTests.GetIPhone
+findIPhone[1](hotlineTests.GetIPhone)  Time elapsed: 60.129 s  <<< FAILURE!
+org.junit.ComparisonFailure: Result is true expected:<http://[ispace.com.ua/catalog/282030/282031/72510]> but was:<http://[hotline.ua/mobile-mobilnye-telefony-i-smartfony/apple-iphone-7-32gb-black/prices/]>
+	at hotlineTests.GetIPhone.findIPhone(GetIPhone.java:103)
+
